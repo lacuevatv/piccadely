@@ -1,0 +1,45 @@
+/*--------------------------------------------------------------
+1.0 Reset
+--------------------------------------------------------------*/
+
+@import 'sass/reset';
+
+/*--------------------------------------------------------------
+2.0 Fuentes
+--------------------------------------------------------------*/
+
+@import 'sass/fonts';
+
+/*--------------------------------------------------------------
+3.0 variables
+--------------------------------------------------------------*/
+
+@import 'sass/variables';
+
+/*--------------------------------------------------------------
+4.0 MAIN CSS
+--------------------------------------------------------------*/
+
+html, body {
+    width: 100%;
+    color: #333;
+    background-color: #fff;
+}//html, body
+
+.main-wrapper {
+    font-family: $fuente-principal;
+    background-color: #0d001a;
+    color: $color-blanco;
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    max-width: 1000px;
+    margin: 0 auto;
+    @media (min-width: $xs) {
+        width: 100%;
+    }
+
+    .inner-wrapper {
+        position: relative;
+    }
+}//.main-wrapper
