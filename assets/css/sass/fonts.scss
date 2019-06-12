@@ -1,68 +1,128 @@
+//MyriadConceptRoman-Regular
+
 // FONT TYPE DEFINITIONS
 @font-face {
-    font-family: 'Bebas';
-    src: url('../fonts/bebas.eot');
-    src: url('../fonts/bebas.woff') format('woff'),
-        url('../fonts/bebas.woff2') format('woff'),
-        url('../fonts/bebas.svg') format('svg'),
-        url('../fonts/bebas.ttf') format('truetype');
+    font-family: 'BebasNeue-Book';
+    src: url('../fonts/bebasneue/bebasneue-book.eot');
+    src: url('../fonts/bebasneue/bebasneue-book.woff') format('woff'),
+        url('../fonts/bebasneue/bebasneue-book.svg') format('svg'),
+        url('../fonts/bebasneue/bebasneue-book.ttf') format('truetype'),
+        url('../fonts/bebasneue/bebasneue-book.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Helvetica';
-    src: local('Helvetica', 'helvetica');
-    src: url('../fonts/helvetica.eot');
-    src: url('../fonts/helvetica.woff') format('woff'),
-        url('../fonts/helvetica.woff2') format('woff'),
-        url('../fonts/helvetica.svg') format('svg'),
-        url('../fonts/helvetica.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Rama Gothic E';
-    src: url('../fonts/ramagothice-regular.eot');
-    src: url('../fonts/ramagothice-regular.woff') format('woff'),
-        url('../fonts/ramagothice-regular.woff2') format('woff'),
-        //url('../fonts/ramagothice-regular.svg') format('svg'),
-        url('../fonts/ramagothice-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Sari Caps';
-    src: url('../fonts/ssariboldcaps.eot');
-    src: url('../fonts/sariboldcaps.woff') format('woff'),
-        url('../fonts/sariboldcaps.woff2') format('woff'),
-        url('../fonts/sariboldcaps.svg') format('svg'),
-        url('../fonts/sariboldcaps.ttf') format('truetype');
+    font-family: 'BebasNeue';
+    src: url('../fonts/bebasneue/bebasneue-bold.eot');
+    src: url('../fonts/bebasneue/bebasneue-bold.woff') format('woff'),
+        url('../fonts/bebasneue/bebasneue-bold.svg') format('svg'),
+        url('../fonts/bebasneue/bebasneue-bold.ttf') format('truetype'),
+        url('../fonts/bebasneue/bebasneue-bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sari Caps';
-    src: url('../fonts/sarilightcaps.eot');
-    src: url('../fonts/sarilightcaps.woff') format('woff'),
-        url('../fonts/sarilightcaps.woff2') format('woff'),
-        url('../fonts/sarilightcaps.svg') format('svg'),
-        url('../fonts/sarilightcaps.ttf') format('truetype');
+    font-family: 'BebasNeue';
+    src: url('../fonts/bebasneue/bebasneue-regular.eot');
+    src: url('../fonts/bebasneue/bebasneue-regular.woff') format('woff'),
+        url('../fonts/bebasneue/bebasneue-regular.svg') format('svg'),
+        url('../fonts/bebasneue/bebasneue-regular.ttf') format('truetype'),
+        url('../fonts/bebasneue/bebasneue-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/bebasneue/bebasneue-light.eot');
+    src: url('../fonts/bebasneue/bebasneue-light.woff') format('woff'),
+        url('../fonts/bebasneue/bebasneue-light.svg') format('svg'),
+        url('../fonts/bebasneue/bebasneue-light.ttf') format('truetype'),
+        url('../fonts/bebasneue/bebasneue-light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Type Senses Blend Script';
-    src: url('../fonts/typesensesblendscript.eot');
-    src: url('../fonts/typesensesblendscript.woff') format('woff'),
-        url('../fonts/typesensesblendscript.woff2') format('woff'),
-        url('../fonts/typesensesblendscript.svg') format('svg'),
-        url('../fonts/typesensesblendscript.ttf') format('truetype');
+    font-family: 'BebasNeue';
+    src: url('../fonts/bebasneue/bebasneue-thin.eot');
+    src: url('../fonts/bebasneue/bebasneue-thin.woff') format('woff'),
+        url('../fonts/bebasneue/bebasneue-thin.svg') format('svg'),
+        url('../fonts/bebasneue/bebasneue-thin.ttf') format('truetype'),
+        url('../fonts/bebasneue/bebasneue-thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'HeadingProTrial-Book';
+    src: url('../fonts/heading-pro/heading-pro-book-trial.eot');
+    src: url('../fonts/heading-pro/heading-pro-book-trial.woff') format('woff'),
+        url('../fonts/heading-pro/heading-pro-book-trial.svg') format('svg'),
+        url('../fonts/heading-pro/heading-pro-book-trial.ttf') format('truetype');
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HeadingProTrial';
+    src: url('../fonts/heading-pro/heading-pro-extra-bold-trial.eot');
+    src: url('../fonts/heading-pro/heading-pro-extra-bold-trial.woff') format('woff'),
+        url('../fonts/heading-pro/heading-pro-extra-bold-trial.svg') format('svg'),
+        url('../fonts/heading-pro/heading-pro-extra-bold-trial.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HeadingProTrial';
+    src: url('../fonts/heading-pro/heading-pro-extrabold-italic-trial.eot');
+    src: url('../fonts/heading-pro/heading-pro-extrabold-italic-trial.woff') format('woff'),
+        url('../fonts/heading-pro/heading-pro-extrabold-italic-trial.svg') format('svg'),
+        url('../fonts/heading-pro/heading-pro-extrabold-italic-trial.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HeadingProTrial';
+    src: url('../fonts/heading-pro/heading-pro-bold-trial.eot');
+    src: url('../fonts/heading-pro/heading-pro-bold-trial.woff') format('woff'),
+        url('../fonts/heading-pro/heading-pro-bold-trial.svg') format('svg'),
+        url('../fonts/heading-pro/heading-pro-bold-trial.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HeadingProTrial';
+    src: url('../fonts/heading-pro/heading-pro-light-trial.eot');
+    src: url('../fonts/heading-pro/heading-pro-light-trial.woff') format('woff'),
+        url('../fonts/heading-pro/heading-pro-light-trial.svg') format('svg'),
+        url('../fonts/heading-pro/heading-pro-light-trial.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HeadingProTrial';
+    src: url('../fonts/heading-pro/heading-pro-light-italic-trial.eot');
+    src: url('../fonts/heading-pro/heading-pro-light-italic-trial.woff') format('woff'),
+        url('../fonts/heading-pro/heading-pro-light-italic-trial.svg') format('svg'),
+        url('../fonts/heading-pro/heading-pro-light-italic-trial.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HeadingProTrial';
+    src: url('../fonts/heading-pro/heading-pro-thin-trial.eot');
+    src: url('../fonts/heading-pro/heading-pro-thin-trial.woff') format('woff'),
+        url('../fonts/heading-pro/heading-pro-thin-trial.svg') format('svg'),
+        url('../fonts/heading-pro/heading-pro-thin-trial.ttf') format('truetype');
+    font-weight: 100;
     font-style: normal;
 }
