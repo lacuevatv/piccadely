@@ -2,6 +2,17 @@
 
 // FONT TYPE DEFINITIONS
 @font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/bebasneue/bebasneue-regular.eot');
+    src: url('../fonts/bebasneue/bebasneue-regular.woff') format('woff'),
+        url('../fonts/bebasneue/bebasneue-regular.svg') format('svg'),
+        url('../fonts/bebasneue/bebasneue-regular.ttf') format('truetype'),
+        url('../fonts/bebasneue/bebasneue-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'BebasNeue-Book';
     src: url('../fonts/bebasneue/bebasneue-book.eot');
     src: url('../fonts/bebasneue/bebasneue-book.woff') format('woff'),
@@ -20,17 +31,6 @@
         url('../fonts/bebasneue/bebasneue-bold.ttf') format('truetype'),
         url('../fonts/bebasneue/bebasneue-bold.otf') format('opentype');
     font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BebasNeue';
-    src: url('../fonts/bebasneue/bebasneue-regular.eot');
-    src: url('../fonts/bebasneue/bebasneue-regular.woff') format('woff'),
-        url('../fonts/bebasneue/bebasneue-regular.svg') format('svg'),
-        url('../fonts/bebasneue/bebasneue-regular.ttf') format('truetype'),
-        url('../fonts/bebasneue/bebasneue-regular.otf') format('opentype');
-    font-weight: normal;
     font-style: normal;
 }
 

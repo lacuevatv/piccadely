@@ -1,13 +1,14 @@
 /*FUENTES*/
-$fuente-principal: 'Intel Clear', sans-serif;
-$fuente-secundaria: 'Intel Clear Pro', $fuente-principal;//se usa regular
-
+$fuente-principal: 'BebasNeue', sans-serif;
+$fuente-principal-book: 'BebasNeue-Book', $fuente-principal;
+$fuente-secundaria: 'HeadingProTrial', $fuente-principal;
+$fuente-secundaria-book: 'HeadingProTrial-Book', $fuente-secundaria, $fuente-principal;
 
 /*COLORES*/
 $color-blanco: #fff;
-$color-negro: #2e3337;
-$color-azul-fondo: #12083b;
-$color-texto-bnt: #2e3337;
+$color-negro: #231f20;
+$color-naranja: #ef4a23;
+$color-beige: #eee9e2;
 $color-amarillo: #f3d54e;
 
 /*TIEMPO*/
@@ -16,9 +17,9 @@ $transitionSpeed: .5s;
 /*GRID OPTIONS*/
 $xs: 500px; //<576px
 $sm: 750px; //<768px
-$md: 1000px;
-$lg: 1200px; //<1200px
-$xlg: 1500px;
+$md: 992px;
+$lg: 1270px; //<1200px
+$xlg: 1680px;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -61,52 +62,3 @@ $xlg: 1500px;
   -ms-clip-path: $clip;
   clip-path: $clip;
 }
-
-
-/*
-@media (min-width: $sm) {}
--webkit-
--moz-
--ms-
--o-
-
-display: flex;
-display: -o-flex;
-display: -ms-flex;
-display: -moz-flex;
-display: -webkit-flex;
--webkit-align-items: center;
--moz-align-items: center;
--ms-align-items: center;
--o-align-items: center;
-align-items: center;
--webkit-justify-content: center;
--moz-justify-content: center;
--ms-justify-content: center;
--o-justify-content: center;
-justify-content: center;
-
-display: flex;
-display: -o-flex;
-display: -ms-flex;
-display: -moz-flex;
-display: -webkit-flex;
--webkit-justify-content: space-between;
--moz-justify-content: space-between;
--ms-justify-content: space-between;
--o-justify-content: space-between;
-justify-content: space-between;
-
-&:hover {
-    zoom: 1;
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-}
-
-
-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-  background-image: url('../images/lupa@2x.png');
-  background-size: 15px 15px;
-}*/

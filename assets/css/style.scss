@@ -21,23 +21,14 @@
 --------------------------------------------------------------*/
 
 html, body {
-    width: 100%;
-    color: #333;
     background-color: #fff;
+    color: $color-negro;
+    font-family: $fuente-principal;
+    font-size: 1rem;
+    line-height: 1.3rem;
 }//html, body
 
 .main-wrapper {
-    font-family: $fuente-principal;
-    background-color: #0d001a;
-    color: $color-blanco;
-    position: relative;
-    overflow: hidden;
-    width: 500px;
-    max-width: 1000px;
-    margin: 0 auto;
-    @media (min-width: $xs) {
-        width: 100%;
-    }
 
     .inner-wrapper {
         position: relative;
