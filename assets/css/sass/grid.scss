@@ -1,0 +1,65 @@
+.container {
+    width: 100%;
+    padding: $GlobalPadding;
+}
+
+.row {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+}
+
+.row-md {
+    @media (min-width: $md) {
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+    }
+}
+
+.row-aling-center {
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.row-justify-center {
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+}
+
+.row-grid {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row-md-all-center {
+    @extend .row-md;
+    @extend .row-justify-center;
+    @extend .row-justify-center;
+    
+}
+
+.col-footer {
+     width: 50%;   
+     @media (min-width: $md) {
+         width: 25%;
+     }
+}

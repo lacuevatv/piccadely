@@ -17,20 +17,57 @@
 @import 'sass/variables';
 
 /*--------------------------------------------------------------
-4.0 MAIN CSS
+4.0 GENERAL
 --------------------------------------------------------------*/
 
 html, body {
-    background-color: #fff;
+    background-color: $color-beige;
     color: $color-negro;
     font-family: $fuente-principal;
     font-size: 1rem;
     line-height: 1.3rem;
+    height: 100%;
+    width: 100%;
 }//html, body
 
-.main-wrapper {
+.site-wrapper {
+    position: relative;
+    z-index: 1;
+}
 
+.main-header {
+    position: relative;
+    z-index: 11;
+}
+
+/*--------------------------------------------------------------
+5.0 GRID
+--------------------------------------------------------------*/
+
+@import 'sass/grid';
+
+/*--------------------------------------------------------------
+6.0 NAVBAR
+--------------------------------------------------------------*/
+
+@import 'sass/navbar';
+
+/*--------------------------------------------------------------
+7.0 FOOTER
+--------------------------------------------------------------*/
+
+@import 'sass/footer';
+
+/*--------------------------------------------------------------
+8.0 MAIN CONTENT
+--------------------------------------------------------------*/
+
+.main-wrapper {
+    position: relative;
+    z-index: 1;
     .inner-wrapper {
         position: relative;
     }
 }//.main-wrapper
+
+
