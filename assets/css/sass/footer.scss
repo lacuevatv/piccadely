@@ -23,6 +23,14 @@
         -o-flex-wrap: wrap;
         flex-wrap: wrap;
 
+        @media (min-width: $md) {
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+            -ms-justify-content: space-between;
+            -o-justify-content: space-between;
+            justify-content: space-between;
+        }
+
         .col-footer {
             width: 50%;   
             @media (min-width: $md) {
@@ -91,6 +99,7 @@
                 -ms-justify-content: flex-end;
                 -o-justify-content: flex-end;
                 justify-content: flex-end;
+                padding-bottom: .5em;
                 @media (min-width: $lg) {
                     font-size: .95rem;
                     line-height: 1.2rem;
@@ -310,8 +319,8 @@
             padding: 1.5em 0 1em;
 
             @media (min-width: $md) {
-                width: 25%;
-                padding: 0 30px;
+                width: 20%;
+                padding: 0 20px;
                 -webkit-align-self: flex-end;
                 -moz-align-self: flex-end;
                 -ms-align-self: flex-end;
@@ -322,9 +331,6 @@
                 -ms-flex-direction: column-reverse;
                 -o-flex-direction: column-reverse;
                 flex-direction: column-reverse;
-            }
-            @media (min-width: $lg) {
-                padding: 0 40px;
             }
 
             .links-pedidos {
@@ -484,6 +490,23 @@
 
     }//.row
 
+}//.main-footer
+
+.button-chat-wrapper {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    z-index: 111;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    -o-justify-content: flex-end;
+    justify-content: flex-end;
+
     .chat-felicidad-button {
         @extend .btn;
         display: none;
@@ -496,23 +519,17 @@
             font-size: 1.1rem;
             line-height: 2rem;
             display: block;
-            position: absolute;
-            z-index: 111;
-            bottom: 0;
             padding: .8em 1.1em;
-            right: 8em;
             border-top-left-radius: .7em;
             border-top-right-radius: .7em;
         }
         @media (min-width: $lg) {
-            right: 8em;
             padding: 1em 1.3em;
             font-size: 1.5rem;
         }
         @media (min-width: $xlg) {
-            right: 10em;
             padding: 1em 1.3em;
             font-size: 2rem;
         }
     }//.chat-felicidad-button
-}//.main-footer
+}//.button-chat-wrapper

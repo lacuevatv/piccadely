@@ -199,14 +199,14 @@ button {
 /*MEDIDAS*/
 /*TIEMPO*/
 /*GRID OPTIONS*/
-.btn, .main-footer .chat-felicidad-button, .main-footer .row .tel-footer .links-pedidos, .main-footer .row .tel-footer .tel-pedidos, .main-footer .row .tel-footer .wa-pedidos, .main-footer .row .nav-footer-wrapper .nav-footer li a, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a, .main-nav .pedi-wrapper .wa-pedidos, .main-nav .pedi-wrapper .tel-pedidos:before {
+.btn, .button-chat-wrapper .chat-felicidad-button, .main-footer .row .tel-footer .links-pedidos, .main-footer .row .tel-footer .tel-pedidos, .main-footer .row .tel-footer .wa-pedidos, .main-footer .row .nav-footer-wrapper .nav-footer li a, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a, .main-nav .pedi-wrapper .wa-pedidos, .main-nav .pedi-wrapper .tel-pedidos:before {
   cursor: pointer;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-.btn:hover, .main-footer .chat-felicidad-button:hover, .main-footer .row .tel-footer .links-pedidos:hover, .main-footer .row .tel-footer .tel-pedidos:hover, .main-footer .row .tel-footer .wa-pedidos:hover, .main-footer .row .nav-footer-wrapper .nav-footer li a:hover, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a:hover, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a:hover, .main-nav .pedi-wrapper .wa-pedidos:hover, .main-nav .pedi-wrapper .tel-pedidos:hover:before {
+.btn:hover, .button-chat-wrapper .chat-felicidad-button:hover, .main-footer .row .tel-footer .links-pedidos:hover, .main-footer .row .tel-footer .tel-pedidos:hover, .main-footer .row .tel-footer .wa-pedidos:hover, .main-footer .row .nav-footer-wrapper .nav-footer li a:hover, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a:hover, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a:hover, .main-nav .pedi-wrapper .wa-pedidos:hover, .main-nav .pedi-wrapper .tel-pedidos:hover:before {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -605,6 +605,9 @@ html, body {
     display: none;
   }
 }
+.main-nav .navbar-mobile-wrapper {
+  position: absolute;
+}
 @media (min-width: 992px) {
   .main-nav .navbar-mobile-wrapper {
     display: none;
@@ -643,6 +646,15 @@ html, body {
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+  .main-footer .row {
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+  }
 }
 .main-footer .row .col-footer {
   width: 50%;
@@ -717,6 +729,7 @@ html, body {
   -ms-justify-content: flex-end;
   -o-justify-content: flex-end;
   justify-content: flex-end;
+  padding-bottom: 0.5em;
 }
 @media (min-width: 1260px) {
   .main-footer .row .nav-footer-wrapper .nav-footer {
@@ -969,8 +982,8 @@ html, body {
 }
 @media (min-width: 992px) {
   .main-footer .row .tel-footer {
-    width: 25%;
-    padding: 0 30px;
+    width: 20%;
+    padding: 0 20px;
     -webkit-align-self: flex-end;
     -moz-align-self: flex-end;
     -ms-align-self: flex-end;
@@ -981,11 +994,6 @@ html, body {
     -ms-flex-direction: column-reverse;
     -o-flex-direction: column-reverse;
     flex-direction: column-reverse;
-  }
-}
-@media (min-width: 1260px) {
-  .main-footer .row .tel-footer {
-    padding: 0 40px;
   }
 }
 .main-footer .row .tel-footer .links-pedidos, .main-footer .row .tel-footer .tel-pedidos, .main-footer .row .tel-footer .wa-pedidos {
@@ -1169,11 +1177,27 @@ html, body {
     background-size: 27px;
   }
 }
-.main-footer .chat-felicidad-button {
+
+.button-chat-wrapper {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  z-index: 111;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.button-chat-wrapper .chat-felicidad-button {
   display: none;
 }
 @media (min-width: 992px) {
-  .main-footer .chat-felicidad-button {
+  .button-chat-wrapper .chat-felicidad-button {
     font-family: "HeadingProTrial", "BebasNeue", sans-serif;
     color: #fff;
     background-color: #ef4a23;
@@ -1182,25 +1206,19 @@ html, body {
     font-size: 1.1rem;
     line-height: 2rem;
     display: block;
-    position: absolute;
-    z-index: 111;
-    bottom: 0;
     padding: 0.8em 1.1em;
-    right: 8em;
     border-top-left-radius: 0.7em;
     border-top-right-radius: 0.7em;
   }
 }
 @media (min-width: 1260px) {
-  .main-footer .chat-felicidad-button {
-    right: 8em;
+  .button-chat-wrapper .chat-felicidad-button {
     padding: 1em 1.3em;
     font-size: 1.5rem;
   }
 }
 @media (min-width: 1680px) {
-  .main-footer .chat-felicidad-button {
-    right: 10em;
+  .button-chat-wrapper .chat-felicidad-button {
     padding: 1em 1.3em;
     font-size: 2rem;
   }
