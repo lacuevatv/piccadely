@@ -1,27 +1,280 @@
 .main-nav {
     position: relative;
     z-index: 1;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    padding-bottom: .5em;
     
     .brand-name {
+        width: 25%;
 
+        @media (min-width: $xlg) {
+            width: 20%;
+        }
+
+        a {
+            height: 100%;
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -o-align-items: center;
+            align-items: center;
+
+            img {
+                width: 80%;
+                max-width: 212px;
+                position: relative;
+                @media (min-width: $lg) {
+                    top: 1em;
+                    width: 90%;
+                }
+                @media (min-width: $xlg) {
+                    top: 1em;
+                    width: 100%;
+                }
+            }
+        }
     }//.brand-name
 
     .pedi-wrapper {
+        display: none;
+        @media (min-width: $md) {
+            width: 8.6em;
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            -o-flex-direction: column;
+            flex-direction: column;
+        }
+        @media (min-width: $xlg) {
+            width: 10em;
+        }
+        
+
+        .main-pedidos {
+            text-align: center;
+            padding: 1em 0;
+            font-family: $fuente-secundaria;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: $color-blanco;
+            margin-bottom: .5em;
+            background-image: url(../images/bk-efect-naranja.svg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            @media (min-width: $lg) {
+                font-size: 1.2rem;
+                padding: 1.2em 1.5em;
+            }
+            @media (min-width: $xlg) {
+                font-size: 1.4rem;
+            }
+        }//.main-pedidos
+
+        .tel-pedidos {
+            position: relative;
+            color:$color-naranja;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            padding-left: 25px;
+            margin-left: .6rem;
+            @media (min-width: $lg) {
+                font-size: 1.56rem;
+                margin: 0;
+            }
+            @media (min-width: $xlg) {
+                font-size: 1.8rem;
+                line-height: 1.8rem;
+            }
+
+            &:before {
+                @extend .btn;
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 40%;
+                @include transform(translateY(-50%));
+                width: 26px;
+                height: 26px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../images/tel-naranja.png);
+                background-size: 18px;
+                @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+                    background-image: url(../images/tel-naranja@2x.png);
+                    background-size: 18px;
+                }
+            }
+        }//.tel-pedidos
+
+        .wa-pedidos {
+            @extend .btn;
+            position: relative;
+            color:$color-naranja;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            padding-left: 25px;
+            margin-left: .6rem;
+            @media (min-width: $lg) {
+                font-size: 1.56rem;
+                margin: 0;
+            }
+            @media (min-width: $xlg) {
+                font-size: 1.8rem;
+                line-height: 1.8rem;
+            }
+            
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 40%;
+                @include transform(translateY(-50%));
+                width: 25px;
+                height: 25px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../images/wa-naranja.png);
+                background-size: 20px;
+                @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+                    background-image: url(../images/wa-naranja@2x.png);
+                    background-size: 20px;
+                }
+            }
+        }//.wa-pedidos
 
     }//.pedi-wrapper
 
-    .toggle {
-
-    }//.toggle {
-
-
     .navbar-desktop-wrapper {
-        .menu-desktop {}//.menu-desktop
+        display: none;
+        @media (min-width: $md) {
+            display: block;
+            -webkit-flex-grow: 1;
+            -moz-flex-grow: 1;
+            -ms-flex-grow: 1;
+            -o-flex-grow: 1;
+            flex-grow: 1;
+            -webkit-align-self: flex-end;
+            -moz-align-self: flex-end;
+            -ms-align-self: flex-end;
+            -o-align-self: flex-end;
+            align-self: flex-end;
+        }
+
+        .sup-menu-desktop {
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+
+            @media (min-width: $xlg) {
+                font-size: 1.4rem;
+                line-height: 1.5rem;
+            }
+
+            li {
+                margin-right: 3em;
+
+                a {
+                    @extend .btn;
+                }
+            }
+        }//.sup-menu-desktop
+        
+        .main-menu-desktop {
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            margin: 1.5em 0 1em;
+            font-family: $fuente-secundaria;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            @media (min-width: $lg) {
+                font-size: 1.25rem;
+                margin: 1.5em 0 .5em;
+            }
+            @media (min-width: $xlg) {
+                font-size: 1.7rem;
+                line-height: 1.7rem;
+                margin: 1em 0 .5em;
+            }
+
+            li {
+
+                a {
+                    @extend .btn;
+                    padding-right: 2em;
+                    position: relative;
+                    
+                    strong {
+                        text-transform: uppercase;
+                    }
+
+                    &:after {
+                        content: '>';
+                        position: absolute;
+                        display: block;
+                        bottom: 0;
+                        right: -.5em;
+                        @include transition(all $transitionSpeed);
+                    }
+
+                    &:hover {
+                        &:after {
+                           //margin-left: .5em;
+                           @include transform(translateX(.2em));
+                        }   
+                    }
+                }//a
+            }//li
+        }//.main-menu-desktop
 
     }//.navbar-desktop
 
+    .toggle {
+        @media (min-width: $md) {
+            display: none;
+        }
+    }//.toggle {
+
     .navbar-mobile-wrapper {
-        .menu-mobile {}//.menu-mobile
+        @media (min-width: $md) {
+            display: none;
+        }
+
+        .menu-mobile {
+            
+        }//.menu-mobile
 
         .logo-gris {}//.logo-gris
 

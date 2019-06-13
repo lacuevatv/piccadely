@@ -71,9 +71,11 @@ $xlg: 1680px;
 
 .btn {
   cursor: pointer;
+  @include transition(all $transitionSpeed);
   &:hover {
+      @include transition(all $transitionSpeed);
       zoom: 1;
-      opacity: 0.9;
+      opacity: 0.7;
     }
 }
 
