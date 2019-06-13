@@ -12,8 +12,11 @@ $color-beige: #eee9e2;
 $color-amarillo: #f3d54e;
 
 /*MEDIDAS*/
-$GlobalPadding: 25px;
-$GlobalPaddingMD: 5%;
+$GlobalPadding: 1em;
+$GlobalPaddingSM: 1.5em;
+$GlobalPaddingMD: 2em;
+$GlobalPaddingLG: 4em;
+$GlobalPaddingXLG: 8em;
 /*TIEMPO*/
 $transitionSpeed: .5s;
 
@@ -21,7 +24,7 @@ $transitionSpeed: .5s;
 $xs: 500px; //<576px
 $sm: 750px; //<768px
 $md: 992px;
-$lg: 1270px; //<1200px
+$lg: 1260px; //<1200px
 $xlg: 1680px;
 
 @mixin border-radius($radius) {
@@ -64,4 +67,16 @@ $xlg: 1680px;
   -moz-clip-path: $clip;
   -ms-clip-path: $clip;
   clip-path: $clip;
+}
+
+.btn {
+  cursor: pointer;
+  &:hover {
+      zoom: 1;
+      opacity: 0.9;
+    }
+}
+
+.fuente-principal {
+  font-family: $fuente-principal!important;
 }

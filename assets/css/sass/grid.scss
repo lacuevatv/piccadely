@@ -1,6 +1,24 @@
 .container {
+    position: relative;
     width: 100%;
-    padding: $GlobalPadding;
+    padding-left: $GlobalPadding;
+    padding-right: $GlobalPadding;
+    @media (min-width: $md) {
+        padding-left: $GlobalPaddingSM;
+        padding-right: $GlobalPaddingSM;
+    }
+    @media (min-width: $md) {
+        padding-left: $GlobalPaddingMD;
+        padding-right: $GlobalPaddingMD;
+    }
+    @media (min-width: $lg) {
+        padding-left: $GlobalPaddingLG;
+        padding-right: $GlobalPaddingLG;
+    }
+    @media (min-width: $xlg) {
+        padding-left: $GlobalPaddingXLG;
+        padding-right: $GlobalPaddingXLG;
+    }
 }
 
 .row {
@@ -55,11 +73,4 @@
     @extend .row-justify-center;
     @extend .row-justify-center;
     
-}
-
-.col-footer {
-     width: 50%;   
-     @media (min-width: $md) {
-         width: 25%;
-     }
 }
