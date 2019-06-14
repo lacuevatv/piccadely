@@ -8,6 +8,7 @@ $fuente-secundaria-book: 'HeadingProTrial-Book', $fuente-secundaria, $fuente-pri
 $color-blanco: #fff;
 $color-negro: #231f20;
 $color-naranja: #ef4a23;
+$color-naranja-texto: #f5831f;
 $color-beige: #eee9e2;
 $color-amarillo: #f3d54e;
 
@@ -17,12 +18,13 @@ $GlobalPaddingSM: 1.5em;
 $GlobalPaddingMD: 2em;
 $GlobalPaddingLG: 4em;
 $GlobalPaddingXLG: 8em;
+
 /*TIEMPO*/
 $transitionSpeed: .5s;
 
 /*GRID OPTIONS*/
 $xs: 500px; //<576px
-$sm: 750px; //<768px
+$sm: 767px; //<768px
 $md: 992px;
 $lg: 1260px; //<1200px
 $xlg: 1680px;

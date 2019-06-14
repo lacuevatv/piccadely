@@ -37,7 +37,7 @@ html, body {
 
 .main-header {
     position: relative;
-    z-index: 11;
+    z-index: 111;
 }
 
 /*--------------------------------------------------------------
@@ -65,6 +65,7 @@ html, body {
 .main-wrapper {
     position: relative;
     z-index: 1;
+    background-color: $color-blanco;
     .inner-wrapper {
         position: relative;
     }

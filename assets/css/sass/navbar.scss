@@ -1,6 +1,11 @@
 .main-nav {
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    z-index: 11;
+    left: 0;
+    top: 0;
+    background-color: $color-beige;
+    width: 100%;
+    height: 74px;
     display: flex;
     display: -o-flex;
     display: -ms-flex;
@@ -11,11 +16,21 @@
     -ms-justify-content: space-between;
     -o-justify-content: space-between;
     justify-content: space-between;
-    padding-bottom: .5em;
+    @media (min-width: $sm) {
+        height: 90px;
+    }
+    @media (min-width: $md) {
+        position: relative;
+        height: auto;
+        padding-bottom: .5em;
+    }
     
     .brand-name {
-        width: 25%;
-
+        width: 70%;
+        
+        @media (min-width: $md) {
+            width: 20%;
+        }
         @media (min-width: $xlg) {
             width: 20%;
         }
@@ -35,8 +50,17 @@
 
             img {
                 width: 80%;
-                max-width: 212px;
+                max-width: 189px;
                 position: relative;
+                display: block;
+                margin: 1em 0;
+                @media (min-width: $sm) {
+                    margin: $GlobalPaddingSM 0;
+                }
+                @media (min-width: $md) {
+                    max-width: 212px;
+                    margin: 0;
+                }
                 @media (min-width: $lg) {
                     top: 1em;
                     width: 90%;
@@ -262,23 +286,182 @@
     }//.navbar-desktop
 
     .toggle {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: $GlobalPadding;
+        top: $GlobalPadding;
+        background-color: #353535;
+        width: 45px;
+        height: 45px;
+        @include border-radius(5px);
+        @media (min-width: $sm) {
+            right: $GlobalPaddingSM;
+            top: $GlobalPaddingSM;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        .tog {
+            @include transition(all $transitionSpeed);
+            position: absolute;
+            display: block;
+            width: 65%;
+            height: 4px;
+            left: 18%;
+            background-color: $color-blanco;
+        }
+
+        .tog1 {
+            top: 22%;
+        }
+        .tog2 {
+            top: 45%;
+            opacity: 1;
+        }
+        
+        .tog3 {
+            top: 66%;
+        }
+
         @media (min-width: $md) {
             display: none;
         }
-    }//.toggle {
+    }//.toggle
+
+    .menu-open {
+        .tog2 {
+            opacity: 0;
+        }
+
+        .tog1 {
+            @include transform(rotate(45deg) translate3d(6px,7px, 0));
+        }
+        .tog3 {
+            @include transform(rotate(-45deg) translate3d(7px,-7px, 0));
+        }
+    }//.menu-open
 
     .navbar-mobile-wrapper {
-        position: absolute;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 111;
+        background-color: $color-beige;
+        width: 80%;
+        height: 100vh;
+        will-change: transform;
+        overflow-y: auto;
+        @include transform(translateX(-100%));
+        @include transition(all $transitionSpeed);
+        
+        @media (min-width: $xs) {
+            width: 50%;
+        }
         @media (min-width: $md) {
             display: none;
         }
 
+        .menu-mobile-image {
+            background-color: $color-naranja;
+            height: 160px;
+            position: relative;
+            overflow: hidden;
+
+            @media (min-height: 800px){
+                height: 200px;
+            }
+
+            @media (min-width: $sm) and (min-height: 900px){
+                height: 250px;
+            }
+
+            img {
+                position: absolute;
+                left: 45%;
+                top: 50%;
+                height: auto;
+                @include transform(translate3D(-50%,-50%,0));
+                width: 120%;
+                text-align: center;
+            }
+        }//.menu-mobile-image
+
         .menu-mobile {
-            
+            font-family: $fuente-secundaria;
+            color: $color-naranja-texto;
+            font-size: .9rem;
+            @media (min-width: $sm) {
+                font-size: 1.6rem;
+            }
+
+            li {
+                border-bottom: 1px solid rgba(157,158,158,0.5);
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                a {
+                    display: block;
+                    padding: .5em .2em .5em 1em;
+                    text-transform: uppercase;
+
+                    @media (min-width: $sm) {
+                        font-size: 1.5rem;
+                        padding: .8em .2em .8em 1.5em;
+                    }
+                }
+
+                .special-link {
+                    font-size: 1.15rem;
+                    font-weight: 700;
+                    @media (min-width: $sm) {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .mini-link {
+                    text-transform: capitalize;
+                    color: $color-negro;
+                    font-size: 1.15rem;
+                    padding-left: 2em;
+                    strong {
+                        text-transform: uppercase;
+                    }
+
+                    &:after {
+                        content: '>';
+                        font-size: 150%;
+                        color: $color-naranja-texto;
+                        vertical-align: bottom;
+                        margin-left: .1em;
+                    }
+
+                    @media (min-width: $sm) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }//li
         }//.menu-mobile
 
-        .logo-gris {}//.logo-gris
+        .logo-gris {
+            display: block;
+            margin: 1.5em auto 1em;
+            text-align: center;
 
-    }//.navbar-mobile
+            > img {
+                width: 137px;
+            }
+        }//.logo-gris
+
+    }//.navbar-mobile-wrapper
+
+    .opened {
+        @include transition(all $transitionSpeed);
+        @include transform(translateX(0));
+    }
     
 }//.main-nav
