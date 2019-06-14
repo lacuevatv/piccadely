@@ -1,10 +1,38 @@
- /*
-  * ANIMATIONS
- */
-@keyframes blinking {
-	0% {opacity: 0;}
-	50% {opacity: 1;}
+/*
+  * ANIMATIONS MENU MOBILE
+*/ 
+.navbar-mobile-wrapper.opened {
+	.menu-mobile li .mini-link:after {
+		opacity: 0;
+		animation-name: fade-in;
+		animation-duration: 1s;
+		animation-delay:200ms;
+		animation-fill-mode: forwards;
+	}
+	.menu-mobile li:nth-child(3) .mini-link:after {
+		animation-delay:250ms;
+	}
+	.menu-mobile li:nth-child(4) .mini-link:after {
+		animation-delay:300ms;
+	}
+	.menu-mobile li:nth-child(5) .mini-link:after {
+		animation-delay:350ms;
+	}
 }
+
+@keyframes fade-in {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fade-out {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+/*
+  * ANIMATIONS IN VIEW
+ */
 
  //slide down flecha header
  .movil-element.slide-down.in-view {
@@ -80,35 +108,4 @@
 @keyframes slide-right {
 	from {opacity: 0;transform:translateX(50%);}
     to {opacity: 1;transform:translateX(0);}
-}
-
-
-
-
-//galeria
-.background-more-info.open-background {
-	animation-name: fade-in;
-	opacity: 0;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-	display: flex;
-	display: -o-flex;
-	display: -ms-flex;
-	display: -moz-flex;
-	display: -webkit-flex;
-	/*-webkit-align-items: center;
-	-moz-align-items: center;
-	-ms-align-items: center;
-	-o-align-items: center;
-	align-items: center;*/
-	-webkit-justify-content: center;
-	-moz-justify-content: center;
-	-ms-justify-content: center;
-	-o-justify-content: center;
-	justify-content: center;
-}
-
-@keyframes fade-in {
-	from {opacity: 0;}
-	to {opacity: 1;}
 }

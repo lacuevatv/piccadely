@@ -378,7 +378,7 @@
 
             .wa-pedidos {
                 @extend .links-pedidos;
-                padding-left: 50px;
+                padding-left: 40px;
 
                 @media (min-width: $md) {
                     padding-left: 30px;
@@ -433,7 +433,7 @@
 
             .tel-pedidos {
                 @extend .links-pedidos;
-                padding-left: 40px;
+                padding-left: 35px;
                 margin-left: 10px;
 
                 @media (min-width: $md) {

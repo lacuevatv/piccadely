@@ -611,7 +611,7 @@ html, body {
   }
 }
 .main-nav .navbar-desktop-wrapper .main-menu-desktop li a {
-  padding-right: 2em;
+  margin-right: 2em;
   position: relative;
 }
 .main-nav .navbar-desktop-wrapper .main-menu-desktop li a strong {
@@ -733,6 +733,11 @@ html, body {
   height: 160px;
   position: relative;
   overflow: hidden;
+}
+@media (orientation: landscape) {
+  .main-nav .navbar-mobile-wrapper .menu-mobile-image {
+    height: 100px;
+  }
 }
 @media (min-height: 800px) {
   .main-nav .navbar-mobile-wrapper .menu-mobile-image {
@@ -1266,7 +1271,7 @@ html, body {
   }
 }
 .main-footer .row .tel-footer .wa-pedidos {
-  padding-left: 50px;
+  padding-left: 40px;
 }
 @media (min-width: 992px) {
   .main-footer .row .tel-footer .wa-pedidos {
@@ -1331,7 +1336,7 @@ html, body {
   }
 }
 .main-footer .row .tel-footer .tel-pedidos {
-  padding-left: 40px;
+  padding-left: 35px;
   margin-left: 10px;
 }
 @media (min-width: 992px) {
@@ -1453,6 +1458,149 @@ html, body {
 }
 .main-wrapper .inner-wrapper {
   position: relative;
+}
+
+/*--------------------------------------------------------------
+9.0 ANIMATIONS
+--------------------------------------------------------------*/
+/*
+  * ANIMATIONS MENU MOBILE
+*/
+.navbar-mobile-wrapper.opened .menu-mobile li .mini-link:after {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 200ms;
+  animation-fill-mode: forwards;
+}
+.navbar-mobile-wrapper.opened .menu-mobile li:nth-child(3) .mini-link:after {
+  animation-delay: 250ms;
+}
+.navbar-mobile-wrapper.opened .menu-mobile li:nth-child(4) .mini-link:after {
+  animation-delay: 300ms;
+}
+.navbar-mobile-wrapper.opened .menu-mobile li:nth-child(5) .mini-link:after {
+  animation-delay: 350ms;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*
+  * ANIMATIONS IN VIEW
+ */
+.movil-element.slide-down.in-view {
+  animation-name: slide-down;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+}
+.animate-element {
+  opacity: 0;
+}
+
+.animate-element.slide-down-x2.in-view {
+  opacity: 0;
+  animation-name: slide-down;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-down-x2 {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-element.slide-up.in-view {
+  opacity: 0;
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.animate-element.slide-up-list.in-view {
+  opacity: 0;
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-element.slide-left.in-view {
+  opacity: 0;
+  animation-name: slide-left;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-element.slide-right.in-view {
+  opacity: 0;
+  animation-name: slide-right;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
