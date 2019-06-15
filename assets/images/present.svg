@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   height="71"
+   width="68.400002"
+   xml:space="preserve"
+   viewBox="0 0 68.4 70.999997"
+   y="0px"
+   x="0px"
+   id="Layer_1"
+   version="1.1"><metadata
+   id="metadata35"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs33" />
+<style
+   id="style2"
+   type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#43474A;}
+	.st2{display:none;fill:#43474A;}
+	.st3{fill:none;stroke:#43474A;stroke-width:2;stroke-miterlimit:10;}
+	.st4{fill:#43474A;stroke:#43474A;stroke-width:0.5;stroke-miterlimit:10;}
+	.st5{font-family:'ArialMT';}
+	.st6{font-size:17.6498px;}
+</style>
+<g
+   transform="translate(0,-0.3)"
+   id="g28">
+	<g
+   id="g20">
+		<path
+   style="fill:none"
+   id="path4"
+   d="M 50.7,7.7 C 51.7,5.9 51.6,4.2 50.6,2.4 49.9,1.3 49,0.8 47.7,0.8 44.2,0.8 38.4,5 36.2,14.1 42.3,14.3 48.6,11.6 50.7,7.7 Z"
+   class="st0" />
+		<path
+   style="fill:none"
+   id="path6"
+   d="m 19.4,0.8 c -1.3,0 -2.2,0.5 -2.9,1.6 -1.1,1.7 -1.1,3.5 -0.1,5.3 2.2,3.9 8.4,6.7 14.5,6.4 C 28.7,5 22.9,0.8 19.4,0.8 Z"
+   class="st0" />
+		<path
+   style="fill:#43474a"
+   id="path8"
+   d="M 68.4,37.7 H 0 V 21.8 H 68.4 Z M 3.3,34.8 H 64.9 V 24.7 H 3.3 Z"
+   class="st1" />
+		<path
+   style="fill:#43474a"
+   id="path10"
+   d="M 64.7,71.3 H 3.7 V 35.1 h 60.9 v 36.2 z m -58,-3 H 61.5 L 62,37.3 7.2,37.7 Z"
+   class="st1" />
+		<path
+   style="fill:#43474a"
+   id="path12"
+   d="m 36,23.5 c 0.2,-0.5 0.4,-0.8 0.5,-1.2 0.7,0.1 1.5,0.1 2.2,0.1 7.5,0 14.8,-3.6 17.6,-8.7 C 58.1,10.5 58,7.1 56.1,4 54.6,1.6 52.3,0.3 49.4,0.3 43.3,0.3 38.2,5.7 35.2,12.3 32.3,5.7 27.1,0.3 21,0.3 c -2.8,0 -5.2,1.3 -6.7,3.7 -1.9,3.1 -2,6.6 -0.2,9.7 2.8,5.1 8.2,8.7 15.6,8.8 -0.1,0.3 -0.3,0.7 -0.4,1.1 M 49.5,4.7 c 1.3,0 2.2,0.5 2.9,1.6 1.1,1.7 1.1,3.5 0.1,5.3 C 50.3,15.5 44.1,18.3 38,18 40.3,9 46,4.7 49.5,4.7 Z M 18.2,11.6 C 17.2,9.8 17.3,8.1 18.3,6.3 19,5.3 20,4.7 21.2,4.7 24.7,4.7 30.5,8.9 32.7,18 26.6,18.3 20.4,15.5 18.2,11.6 Z"
+   class="st1" />
+		<path
+   style="display:none;fill:#43474a"
+   id="path14"
+   d="M 23.3,38 H 0.3 V 21.8 h 22.9 m 0.1,2.9 h -20 v 10.4 h 20"
+   class="st2" />
+		<rect
+   style="fill:#43474a"
+   id="rect16"
+   height="14.2"
+   width="3.5999999"
+   class="st1"
+   y="22.4"
+   x="32.400002" />
+		<rect
+   style="fill:#43474a"
+   id="rect18"
+   height="10.4"
+   width="3.5999999"
+   class="st1"
+   y="60.900002"
+   x="32.400002" />
+	</g>
+	<g
+   id="g26">
+		<circle
+   style="fill:none;stroke:#43474a;stroke-width:2;stroke-miterlimit:10"
+   id="circle22"
+   r="12.1"
+   cy="48.299999"
+   cx="34.200001"
+   class="st3" />
+		<text
+   style="font-size:17.64979935px;font-family:ArialMT;fill:#43474a;stroke:#43474a;stroke-width:0.5;stroke-miterlimit:10"
+   id="text24"
+   class="st4 st5 st6"
+   transform="translate(29.2852,54.4461)">$</text>
+
+	</g>
+</g>
+</svg>
