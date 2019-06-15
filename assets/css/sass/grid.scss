@@ -55,6 +55,24 @@
     justify-content: center;
 }
 
+.row-justify-space-bw {
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.row-justify-space-ar {
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+}
+
+
+
 .row-grid {
     display: flex;
     display: -o-flex;
@@ -71,6 +89,5 @@
 .row-md-all-center {
     @extend .row-md;
     @extend .row-justify-center;
-    @extend .row-justify-center;
-    
+    @extend .row-justify-center;  
 }

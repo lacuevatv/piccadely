@@ -215,6 +215,9 @@ button {
   opacity: 0.7;
 }
 
+/*
+ * HELPERS
+*/
 .fuente-principal {
   font-family: "BebasNeue", sans-serif !important;
 }
@@ -308,6 +311,22 @@ html, body {
   -ms-justify-content: center;
   -o-justify-content: center;
   justify-content: center;
+}
+
+.row-justify-space-bw {
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.row-justify-space-ar {
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
 }
 
 .row-grid  {
@@ -1454,10 +1473,236 @@ html, body {
 .main-wrapper {
   position: relative;
   z-index: 1;
-  background-color: #fff;
 }
 .main-wrapper .inner-wrapper {
   position: relative;
+  z-index: 1;
+  min-height: 200px;
+  padding-top: 80px;
+}
+@media (min-width: 992px) {
+  .main-wrapper .inner-wrapper {
+    padding-top: 0;
+  }
+}
+.main-wrapper .page-wrapper {
+  position: relative;
+}
+
+/*
+* HOME
+*/
+.home-wrapper {
+  position: relative;
+  z-index: 1;
+}
+.home-wrapper .buttons-header {
+  background-color: #fff;
+  padding: 0.5em 1em;
+}
+@media (min-width: 992px) {
+  .home-wrapper .buttons-header {
+    padding: 1em 1em 0.5em;
+    background-color: #eee9e2;
+  }
+}
+.home-wrapper .home-details {
+  padding: 1em 0;
+}
+@media (min-width: 992px) {
+  .home-wrapper .home-details {
+    padding: 3em 0;
+  }
+}
+@media (min-width: 1260px) {
+  .home-wrapper .home-details {
+    padding: 3em 0;
+  }
+}
+.home-wrapper .home-details li {
+  position: relative;
+  padding: 1em 1em 1.5em;
+  text-align: center;
+}
+.home-wrapper .home-details li:after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #9d9e9e;
+}
+@media (min-width: 767px) {
+  .home-wrapper .home-details li:after {
+    width: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .home-wrapper .home-details li:after {
+    content: none;
+  }
+}
+.home-wrapper .home-details li:last-child:after {
+  content: none;
+}
+@media (min-width: 992px) {
+  .home-wrapper .home-details li {
+    width: 33%;
+    padding: 1em 2em;
+  }
+}
+@media (min-width: 1260px) {
+  .home-wrapper .home-details li {
+    text-align: left;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+  }
+}
+@media (min-width: 1680px) {
+  .home-wrapper .home-details li {
+    width: 28%;
+  }
+}
+.home-wrapper .home-details .image-list {
+  display: block;
+  height: auto;
+  width: 61px;
+  margin: 1em auto;
+}
+@media (min-width: 992px) {
+  .home-wrapper .home-details .image-list {
+    width: auto;
+    height: 86px;
+  }
+}
+@media (min-width: 1260px) {
+  .home-wrapper .home-details .image-list {
+    width: 79px;
+    height: auto;
+    position: relative;
+    top: -20px;
+    margin-right: 1em;
+    margin-bottom: -20px;
+  }
+}
+.home-wrapper .home-details h3 {
+  font-family: "HeadingProTrial", "BebasNeue", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .home-wrapper .home-details h3 {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1260px) {
+  .home-wrapper .home-details h3 {
+    padding-right: 1em;
+  }
+}
+.home-wrapper .home-details p {
+  font-family: "BebasNeue-Book", "BebasNeue", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin: 0.5em auto 0;
+}
+@media (min-width: 500px) {
+  .home-wrapper .home-details p {
+    width: 70%;
+  }
+}
+@media (min-width: 767px) {
+  .home-wrapper .home-details p {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .home-wrapper .home-details p {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+.home-wrapper .home-footer {
+  background-color: #ef4a23;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+@media (min-width: 767px) {
+  .home-wrapper .home-footer {
+    padding: 2em;
+  }
+}
+@media (min-width: 992px) {
+  .home-wrapper .home-footer {
+    text-align: justify;
+    padding: 2em 14%;
+  }
+}
+@media (min-width: 1260px) {
+  .home-wrapper .home-footer {
+    padding: 2em 23%;
+  }
+}
+@media (min-width: 1680px) {
+  .home-wrapper .home-footer {
+    padding: 2em 30%;
+  }
+}
+.home-wrapper .home-footer .image-footer {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  max-width: 196px;
+  margin-bottom: 1em;
+}
+@media (min-width: 767px) {
+  .home-wrapper .home-footer .image-footer {
+    width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  .home-wrapper .home-footer .image-footer {
+    width: 156px;
+    margin-right: 4em;
+  }
+}
+@media (min-width: 1260px) {
+  .home-wrapper .home-footer .image-footer {
+    width: 146px;
+  }
+}
+.home-wrapper .home-footer p {
+  font-family: "BebasNeue-Book", "BebasNeue", sans-serif;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+@media (min-width: 767px) {
+  .home-wrapper .home-footer p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .home-wrapper .home-footer p {
+    font-size: 1.3rem;
+  }
+}
+.home-wrapper .home-footer p strong {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 700;
 }
 
 /*--------------------------------------------------------------

@@ -67,8 +67,23 @@ html, body {
     z-index: 1;
     .inner-wrapper {
         position: relative;
+        z-index: 1;
+        min-height: 200px;
+        padding-top: 80px;
+        @media (min-width: $md) {
+            padding-top: 0;
+        }
+    }
+
+    .page-wrapper {
+       position: relative; 
     }
 }//.main-wrapper
+
+/*
+* HOME
+*/
+@import 'sass/home';
 
 /*--------------------------------------------------------------
 9.0 ANIMATIONS

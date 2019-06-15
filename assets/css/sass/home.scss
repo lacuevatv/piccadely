@@ -1,0 +1,185 @@
+.home-wrapper {
+    position: relative; 
+    z-index: 1;
+
+    .buttons-header {
+        background-color: $color-blanco;
+        padding: .5em 1em;
+        @media (min-width: $md) {
+            padding: 1em 1em .5em;
+            background-color: $color-beige;
+        }
+        
+    }//.buttons-header
+
+
+    .slider-home {}//.slider-home
+
+
+    .home-details {
+        padding: 1em 0;
+        @media (min-width: $md) {
+            padding: 3em 0;
+        }
+        @media (min-width: $lg) {
+            padding: 3em 0;
+        }
+
+        li {
+            position: relative;
+            padding: 1em 1em 1.5em;
+            text-align: center;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 50%;
+                height: 1px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                @include transform(translateX(-50%));
+                background-color:#9d9e9e;
+                @media (min-width: $sm) {
+                    width: 30%;
+                } 
+                @media (min-width: $md) {
+                    content: none;
+                }    
+            }
+
+            &:last-child {
+                &:after {
+                    content: none;
+                }
+            }
+
+            @media (min-width: $md) {
+                width: 33%;
+                padding: 1em 2em;
+            }
+            @media (min-width: $lg) {
+                text-align: left;
+                display: flex;
+                display: -o-flex;
+                display: -ms-flex;
+                display: -moz-flex;
+                display: -webkit-flex;
+            }
+            @media (min-width: $xlg) {
+                width: 28%;
+            }
+        }//li
+
+        .image-list {
+            display: block;
+            height: auto;
+            width: 61px;
+            margin: 1em auto;
+            @media (min-width: $md) {
+                width: auto;
+                height: 86px;
+            }
+            @media (min-width: $lg) {
+                width: 79px;
+                height: auto;
+                position: relative;
+                top: -20px;
+                margin-right: 1em;
+                margin-bottom: -20px;
+            }
+        }
+
+        h3 {
+            font-family: $fuente-secundaria;
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            @media (min-width: $md) {
+                font-size: 1.4rem;
+            }
+            @media (min-width: $lg) {
+                padding-right: 1em;
+            }
+        }
+
+        p {
+            font-family: $fuente-principal-book;
+            font-weight: 300;
+            font-size: .9rem;
+            margin: .5em auto 0;
+            @media (min-width: $xs) {
+                width: 70%;
+            }
+            @media (min-width: $sm) {
+                width: 50%;
+            }
+            @media (min-width: $md) {
+                font-size: 1rem;
+                width: 100%;
+            }
+        }
+
+    }//.home-details
+
+
+    .home-footer {
+        background-color: $color-naranja;
+        color: $color-blanco;
+        text-align: center;
+        padding: 1em;
+        @media (min-width: $sm) {
+            padding: 2em;
+        }
+        @media (min-width: $md) {
+            text-align: justify;
+            padding: 2em 14%;
+        }
+        @media (min-width: $lg) {
+            padding: 2em 23%;
+        }
+        @media (min-width: $xlg) {
+            padding: 2em 30%;
+        }
+
+        .image-footer {
+            display: block;
+            margin: 0 auto;
+            width: 30%;
+            max-width: 196px;
+            margin-bottom: 1em;
+            @media (min-width: $sm) {
+                width: 40%;
+            }
+            @media (min-width: $md) {
+                width: 156px;
+                margin-right: 4em;
+            }
+            @media (min-width: $lg) {
+                width: 146px;
+            }
+        }
+
+        p {
+            font-family: $fuente-principal-book;
+            font-weight: 300;
+            font-size: .75rem;
+            line-height: 1rem;
+            @media (min-width: $sm) {
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+            }
+            @media (min-width: $md) {
+                font-size: 1.3rem;
+            }
+
+            strong {
+                font-family: $fuente-principal;
+                font-weight: 700;
+            }
+        }
+
+    }//.home-footer
+
+}//.home-wrapper
