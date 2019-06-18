@@ -337,7 +337,7 @@
         }
 
         .tog1 {
-            @include transform(rotate(45deg) translate3d(6px,7px, 0));
+            @include transform(rotate(45deg) translate3d(7px,7px, 0));
         }
         .tog3 {
             @include transform(rotate(-45deg) translate3d(7px,-7px, 0));

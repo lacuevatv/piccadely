@@ -707,10 +707,10 @@ html, body {
   opacity: 0;
 }
 .main-nav .menu-open .tog1 {
-  -webkit-transform: rotate(45deg) translate3d(6px, 7px, 0);
-  -moz-transform: rotate(45deg) translate3d(6px, 7px, 0);
-  -ms-transform: rotate(45deg) translate3d(6px, 7px, 0);
-  transform: rotate(45deg) translate3d(6px, 7px, 0);
+  -webkit-transform: rotate(45deg) translate3d(7px, 7px, 0);
+  -moz-transform: rotate(45deg) translate3d(7px, 7px, 0);
+  -ms-transform: rotate(45deg) translate3d(7px, 7px, 0);
+  transform: rotate(45deg) translate3d(7px, 7px, 0);
 }
 .main-nav .menu-open .tog3 {
   -webkit-transform: rotate(-45deg) translate3d(7px, -7px, 0);
