@@ -70,6 +70,9 @@ html, body {
         z-index: 1;
         min-height: 200px;
         padding-top: 80px;
+        @media (min-width: $sm) {
+            padding-top: 90px;
+        }
         @media (min-width: $md) {
             padding-top: 0;
         }
