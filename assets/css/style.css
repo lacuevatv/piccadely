@@ -640,18 +640,22 @@ html, body {
   content: ">";
   position: absolute;
   display: block;
-  bottom: 0;
+  top: 50%;
   right: -0.5em;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .main-nav .navbar-desktop-wrapper .main-menu-desktop li a:hover:after {
-  -webkit-transform: translateX(0.2em);
-  -moz-transform: translateX(0.2em);
-  -ms-transform: translateX(0.2em);
-  transform: translateX(0.2em);
+  -webkit-transform: translateY(-50%) translateX(0.2em);
+  -moz-transform: translateY(-50%) translateX(0.2em);
+  -ms-transform: translateY(-50%) translateX(0.2em);
+  transform: translateY(-50%) translateX(0.2em);
 }
 .main-nav .toggle {
   cursor: pointer;

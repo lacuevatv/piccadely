@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('ready')
-
+    
+    /*
+     * TOGGLE menu-movil
+     */
     $menu = document.getElementById('toggle');
     $menu.addEventListener('click', function(){
         openCloseMobileMenu();
@@ -9,8 +11,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+
 window.addEventListener('load', function() {
-    console.log('all loaded');
+    
+    /*
+     * SLIDER HOME
+    */
+    var slider = tns({
+        container: '#sliderHome',
+        mode: 'gallery',
+        items: 1,
+        slideBy: 'page',
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayButtonOutput:false,
+        controls: false,
+        //nav: false,
+        arrowKeys:true,
+        //animateIn: 'tns-fadeIn',
+        //animateOut: 'tns-fadeOut',
+    });
+
 });
 
 /*

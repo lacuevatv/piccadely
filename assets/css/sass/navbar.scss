@@ -268,15 +268,16 @@
                         content: '>';
                         position: absolute;
                         display: block;
-                        bottom: 0;
+                        top: 50%;
                         right: -.5em;
                         @include transition(all $transitionSpeed);
+                        @include transform(translateY(-50%));
                     }
 
                     &:hover {
                         &:after {
                            //margin-left: .5em;
-                           @include transform(translateX(.2em));
+                           @include transform(translateY(-50%) translateX(.2em));
                         }   
                     }
                 }//a
