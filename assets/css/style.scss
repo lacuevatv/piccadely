@@ -93,3 +93,45 @@ html, body {
 --------------------------------------------------------------*/
 
 @import 'sass/animations';
+
+/*--------------------------------------------------------------
+9.0 LOADER
+--------------------------------------------------------------*/
+.loader {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: $color-beige;
+    z-index: 9999;
+    overflow: hidden;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+
+    .image-loader {
+        height: auto;
+        width: 50px;
+        display: block;
+        animation-name: rotate;
+        animation-duration: 2000ms;
+        animation-iteration-count:infinite;
+    }
+}
+
+.loader.closed {
+	animation-name: fade-out-dissapear;
+	animation-duration: 1000ms;
+	animation-fill-mode: forwards;
+}

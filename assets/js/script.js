@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+    /*
+    * LOADER
+    */
+    setTimeout(
+        function(){
+            document.getElementById('loader').classList.add('closed');
+            setTimeout(function(){
+                initAnimations();
+            },500)
+    }, 2000);
     
     /*
      * TOGGLE menu-movil
@@ -15,6 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('load', function() {
     
     /*
+    * ANIMATIONS
+    */
+    window.addEventListener( 'scroll' , function () {
+        initAnimations();
+    }, false);
+
+    /*
      * SLIDER HOME
     */
     var slider = tns({
@@ -30,6 +47,7 @@ window.addEventListener('load', function() {
         arrowKeys:true,
         //animateIn: 'tns-fadeIn',
         //animateOut: 'tns-fadeOut',
+        speed: 700,
     });
 
 });
@@ -59,3 +77,33 @@ function openCloseMobileMenu() {
         $menu.classList.remove('opened');
     }
 }//openCloseMobileMenu()
+
+function initAnimations() {
+    var animates = document.getElementsByClassName('animate-element');
+        
+    for (let index = 0; index < animates.length; index++) {
+        const element = animates[index];
+        var is_visible = isVisible( element );
+        if ( is_visible ) { // Es diferente de false
+            element.classList.add('in-view');
+        }
+    }
+}
+
+function isVisible ( el ) {
+    var result = false;
+    // Browser viewport
+    var viewport_h = window.innerHeight;
+    var viewport_top = window.pageYOffset;
+    var viewport_bottom = viewport_top + viewport_h;
+    // DOM Element
+    var el_h = el.offsetHeight;                  // Height
+    var el_top = el.getBoundingClientRect().top; // Top
+    var el_bottom = el_top + el_h;               // Bottom
+    // Is inside viewport?
+    if ( el_bottom > 0 && el_top < viewport_h ) { 
+      result = 1.0 - ( el_top + el_h ) / ( viewport_h + el_h );
+    }
+    
+    return result;
+}
