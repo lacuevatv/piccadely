@@ -1453,20 +1453,19 @@ html, body {
     font-size: 1.1rem;
     line-height: 2rem;
     display: block;
-    padding: 0.8em 1.1em;
+    padding: 0.8em 1.1em 0.5em;
     border-top-left-radius: 0.7em;
     border-top-right-radius: 0.7em;
   }
 }
 @media (min-width: 1260px) {
   .button-chat-wrapper .chat-felicidad-button {
-    padding: 1em 1.3em;
+    padding: 1em 1.3em 0.8em;
     font-size: 1.5rem;
   }
 }
 @media (min-width: 1680px) {
   .button-chat-wrapper .chat-felicidad-button {
-    padding: 1em 1.3em;
     font-size: 2rem;
   }
 }
@@ -1552,12 +1551,12 @@ html, body {
 }
 @media (min-width: 500px) {
   .home-wrapper .buttons-header .button-header-armado {
-    height: 220px;
+    height: 230px;
   }
 }
 @media (min-width: 767px) {
   .home-wrapper .buttons-header .button-header-armado {
-    height: 300px;
+    height: 280px;
   }
 }
 @media (min-width: 992px) {
@@ -1574,11 +1573,17 @@ html, body {
     justify-content: center;
     width: calc(100% / 3);
     background-color: #fff;
+    height: 320px;
+  }
+}
+@media (min-width: 1260px) {
+  .home-wrapper .buttons-header .button-header-armado {
+    height: 400px;
   }
 }
 @media (min-width: 1680px) {
   .home-wrapper .buttons-header .button-header-armado {
-    height: 400px;
+    height: 600px;
   }
 }
 .home-wrapper .buttons-header .button-header-armado:hover img {
@@ -1643,7 +1648,7 @@ html, body {
 @media (min-width: 500px) {
   .home-wrapper .buttons-header .button-header-armado h4 {
     max-width: 220px;
-    padding: 0.25em 0.2em 0.1em;
+    padding: 0.25em 0.2em 0.15em;
     font-size: 3rem;
     line-height: 2.5rem;
   }
@@ -1651,7 +1656,7 @@ html, body {
 @media (min-width: 767px) {
   .home-wrapper .buttons-header .button-header-armado h4 {
     max-width: 300px;
-    padding: 0.3em 0.2em 0.1em;
+    padding: 0.3em 0.2em 0.2em;
     font-size: 4rem;
     line-height: 3.2rem;
   }
@@ -1660,7 +1665,7 @@ html, body {
   .home-wrapper .buttons-header .button-header-armado h4 {
     max-width: 100%;
     width: 100%;
-    padding: 0.2em 0.2em 0;
+    padding: 0.2em 0.2em 0.1em;
     font-size: 3rem;
     line-height: 2.5rem;
     margin-bottom: 1em;

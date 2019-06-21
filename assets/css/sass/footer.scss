@@ -519,16 +519,15 @@
             font-size: 1.1rem;
             line-height: 2rem;
             display: block;
-            padding: .8em 1.1em;
+            padding: .8em 1.1em .5em;
             border-top-left-radius: .7em;
             border-top-right-radius: .7em;
         }
         @media (min-width: $lg) {
-            padding: 1em 1.3em;
+            padding: 1em 1.3em .8em;
             font-size: 1.5rem;
         }
         @media (min-width: $xlg) {
-            padding: 1em 1.3em;
             font-size: 2rem;
         }
     }//.chat-felicidad-button

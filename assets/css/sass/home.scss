@@ -46,10 +46,10 @@
             -o-justify-content: flex-end;
             justify-content: flex-end;
             @media (min-width: $xs) {
-                height: 220px; 
+                height: 230px; 
             }
             @media (min-width: $sm) {
-                height: 300px; 
+                height: 280px; 
             }
             @media (min-width: $md) {
                 -webkit-align-items: flex-end;
@@ -64,9 +64,13 @@
                 justify-content: center;
                 width: calc(100% / 3);
                 background-color: $color-blanco;
+                height: 320px;
+            }
+            @media (min-width: $lg) {
+                height: 400px; 
             }
             @media (min-width: $xlg) {
-                height: 400px; 
+                height: 600px; 
             }
 
             &:hover {
@@ -115,20 +119,20 @@
                 font-weight: 700;
                 @media (min-width: $xs) {
                     max-width: 220px;
-                    padding: .25em .2em .1em;
+                    padding: .25em .2em .15em;
                     font-size: 3rem;
                     line-height: 2.5rem;
                 }
                 @media (min-width: $sm) {
                     max-width: 300px;
-                    padding: .3em .2em .1em;
+                    padding: .3em .2em .2em;
                     font-size: 4rem;
                     line-height: 3.2rem;
                 }
                 @media (min-width: $md) {
                     max-width: 100%;
                     width: 100%;
-                    padding: .2em .2em 0;
+                    padding: .2em .2em .1em;
                     font-size: 3rem;
                     line-height: 2.5rem;
                     margin-bottom: 1em;

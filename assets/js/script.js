@@ -4,10 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
     */
     setTimeout(
         function(){
-            document.getElementById('loader').classList.add('closed');
+            $loader = document.getElementById('loader');
+            $loader.classList.add('closed');
             setTimeout(function(){
                 initAnimations();
-            },500)
+            },500);
     }, 2000);
     
     /*
@@ -81,8 +82,8 @@ function openCloseMobileMenu() {
 function initAnimations() {
     var animates = document.getElementsByClassName('animate-element');
         
-    for (let index = 0; index < animates.length; index++) {
-        const element = animates[index];
+    for (var index = 0; index < animates.length; index++) {
+        var element = animates[index];
         var is_visible = isVisible( element );
         if ( is_visible ) { // Es diferente de false
             element.classList.add('in-view');
