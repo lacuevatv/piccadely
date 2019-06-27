@@ -5,15 +5,13 @@
     padding-bottom: 1em;
     @media (min-width: $md) {
         padding-top: 2em;
-        padding-bottom: 5em;
+        padding-bottom: 1em;
     }
     @media (min-width: $lg) {
         padding-top: 2.5em;
-        padding-bottom: 6.5em;
     }
     @media (min-width: $xlg) {
         padding-top: 3em;
-        padding-bottom: 8em;
     }
 
     .row {
@@ -532,3 +530,18 @@
         }
     }//.chat-felicidad-button
 }//.button-chat-wrapper
+
+.button-chat-wrapper-off {
+    position: absolute;
+    bottom: 100px;
+    @include transition(all $transitionSpeed);
+
+    .chat-felicidad-button {
+        @include transition(all $transitionSpeed);
+        padding: .5em .8em 0.5em;
+        font-size: 1.5rem;
+        border-radius: 0;
+        background: transparent;
+        color: $color-negro;
+    }//.chat-felicidad-button
+}//.button-chat-wrapper-off

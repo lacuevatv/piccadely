@@ -872,19 +872,17 @@ html, body {
 @media (min-width: 992px) {
   .main-footer {
     padding-top: 2em;
-    padding-bottom: 5em;
+    padding-bottom: 1em;
   }
 }
 @media (min-width: 1260px) {
   .main-footer {
     padding-top: 2.5em;
-    padding-bottom: 6.5em;
   }
 }
 @media (min-width: 1680px) {
   .main-footer {
     padding-top: 3em;
-    padding-bottom: 8em;
   }
 }
 .main-footer .row {
@@ -1468,6 +1466,26 @@ html, body {
   .button-chat-wrapper .chat-felicidad-button {
     font-size: 2rem;
   }
+}
+
+.button-chat-wrapper-off {
+  position: absolute;
+  bottom: 100px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.button-chat-wrapper-off .chat-felicidad-button {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 0.5em 0.8em 0.5em;
+  font-size: 1.5rem;
+  border-radius: 0;
+  background: transparent;
+  color: #231f20;
 }
 
 /*--------------------------------------------------------------

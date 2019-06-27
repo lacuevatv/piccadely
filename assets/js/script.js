@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('load', function() {
     
     /*
-    * ANIMATIONS
+    * FOOTER BOTON FELICIDAD
     */
     window.addEventListener( 'scroll' , function () {
-        initAnimations();
+        buttonFooterFelicidad();
     }, false);
 
     /*
@@ -79,6 +79,21 @@ function openCloseMobileMenu() {
     }
 }//openCloseMobileMenu()
 
+//mueve el boton del footer para que no moleste a la vista del footer
+function buttonFooterFelicidad() {
+    var buttonWrapper = document.getElementsByClassName('button-chat-wrapper')[0];
+    var mainFooter = document.getElementsByClassName('main-footer')[0];
+        
+    var is_visible = isVisible( mainFooter);
+    if ( is_visible ) { // Es diferente de false
+        buttonWrapper.classList.add('button-chat-wrapper-off');
+    } else {
+        buttonWrapper.classList.remove('button-chat-wrapper-off');
+    }
+    
+}
+
+//ejecuta animaciones agregando clase in-view a la clase animates
 function initAnimations() {
     var animates = document.getElementsByClassName('animate-element');
         
