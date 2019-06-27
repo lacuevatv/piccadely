@@ -1504,6 +1504,16 @@ html, body {
   position: relative;
   z-index: 1;
 }
+@media (min-width: 992px) {
+  .home-wrapper {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    flex-direction: column-reverse;
+  }
+}
 .home-wrapper .buttons-header {
   background-color: #fff;
   padding: 1em 1em;

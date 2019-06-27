@@ -1,6 +1,14 @@
 .home-wrapper {
     position: relative; 
     z-index: 1;
+    @media (min-width: $md) {
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-direction: column-reverse;
+    }
 
     .buttons-header {
         background-color: $color-blanco;
