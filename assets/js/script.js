@@ -24,13 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 window.addEventListener('load', function() {
-    
-    /*
-    * FOOTER BOTON FELICIDAD
-    */
-    window.addEventListener( 'scroll' , function () {
-        buttonFooterFelicidad();
-    }, false);
 
     /*
      * SLIDER HOME

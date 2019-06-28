@@ -5,12 +5,13 @@
     padding-bottom: 1em;
     @media (min-width: $md) {
         padding-top: 2em;
-        padding-bottom: 1em;
+        padding-bottom: 4em;
     }
     @media (min-width: $lg) {
         padding-top: 2.5em;
     }
     @media (min-width: $xlg) {
+        padding-bottom: 4.5em;
         padding-top: 3em;
     }
 
@@ -517,12 +518,12 @@
             font-size: 1.1rem;
             line-height: 2rem;
             display: block;
-            padding: .8em 1.1em .5em;
+            padding: .5em 1.3em .3em;
             border-top-left-radius: .7em;
             border-top-right-radius: .7em;
         }
         @media (min-width: $lg) {
-            padding: 1em 1.3em .8em;
+            padding: .5em 1.3em .3em;
             font-size: 1.5rem;
         }
         @media (min-width: $xlg) {
@@ -531,7 +532,7 @@
     }//.chat-felicidad-button
 }//.button-chat-wrapper
 
-.button-chat-wrapper-off {
+/*.button-chat-wrapper-off {
     position: absolute;
     bottom: 100px;
     @include transition(all $transitionSpeed);
@@ -544,4 +545,4 @@
         background: transparent;
         color: $color-negro;
     }//.chat-felicidad-button
-}//.button-chat-wrapper-off
+}//.button-chat-wrapper-off*/

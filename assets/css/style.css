@@ -872,7 +872,7 @@ html, body {
 @media (min-width: 992px) {
   .main-footer {
     padding-top: 2em;
-    padding-bottom: 1em;
+    padding-bottom: 4em;
   }
 }
 @media (min-width: 1260px) {
@@ -882,6 +882,7 @@ html, body {
 }
 @media (min-width: 1680px) {
   .main-footer {
+    padding-bottom: 4.5em;
     padding-top: 3em;
   }
 }
@@ -1451,14 +1452,14 @@ html, body {
     font-size: 1.1rem;
     line-height: 2rem;
     display: block;
-    padding: 0.8em 1.1em 0.5em;
+    padding: 0.5em 1.3em 0.3em;
     border-top-left-radius: 0.7em;
     border-top-right-radius: 0.7em;
   }
 }
 @media (min-width: 1260px) {
   .button-chat-wrapper .chat-felicidad-button {
-    padding: 1em 1.3em 0.8em;
+    padding: 0.5em 1.3em 0.3em;
     font-size: 1.5rem;
   }
 }
@@ -1468,26 +1469,20 @@ html, body {
   }
 }
 
-.button-chat-wrapper-off {
-  position: absolute;
-  bottom: 100px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.button-chat-wrapper-off .chat-felicidad-button {
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-  padding: 0.5em 0.8em 0.5em;
-  font-size: 1.5rem;
-  border-radius: 0;
-  background: transparent;
-  color: #231f20;
-}
+/*.button-chat-wrapper-off {
+    position: absolute;
+    bottom: 100px;
+    @include transition(all $transitionSpeed);
 
+    .chat-felicidad-button {
+        @include transition(all $transitionSpeed);
+        padding: .5em .8em 0.5em;
+        font-size: 1.5rem;
+        border-radius: 0;
+        background: transparent;
+        color: $color-negro;
+    }//.chat-felicidad-button
+}//.button-chat-wrapper-off*/
 /*--------------------------------------------------------------
 8.0 MAIN CONTENT
 --------------------------------------------------------------*/
@@ -1938,20 +1933,14 @@ html, body {
   }
 }
 @keyframes fade-out-dissapear {
+  /*0% {opacity: 1;height: 100vh;width: 100%;}
+  75% {opacity: 0.3;height: 0vh;width: 0;}
+  100% {opacity: 0;height: 0;width: 0;}*/
   0% {
     opacity: 1;
-    height: 100vh;
-    width: 100%;
-  }
-  75% {
-    opacity: 0.3;
-    height: 0vh;
-    width: 0;
   }
   100% {
     opacity: 0;
-    height: 0;
-    width: 0;
   }
 }
 @keyframes rotate {
@@ -2081,7 +2070,7 @@ html, body {
 9.0 LOADER
 --------------------------------------------------------------*/
 .loader {
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 100vh;
   background: #eee9e2;
