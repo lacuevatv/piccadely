@@ -12,18 +12,33 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#ef4a23">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
+
+<!-- TinySlider -->
+    <link href="assets/css/tiny-slider.css" rel="stylesheet">
+    <!--[if (lt IE 9)]><script src="assets/js/tiny-slider/tiny-slider.helper.ie8.js"></script><![endif]-->
 <!-- Custom CSS -->
     <link href="assets/css/style.css?1.0" rel="stylesheet">
 
 </head>
 <body>
 <div class="site-wrapper">
+    <div id="loader" class="loader">
+        <article class="loading">
+            <h1>
+                <picture>
+                    <source srcset="assets/images/loader.svg" type="image/svg+xml">
+                    <source srcset="assets/images/loader.png 1x, assets/images/loader@2x.png 2x" media="(min-width: 300px)">
+                    <img class="image-loader" src="assets/images/loader.png" alt="Piccadely loader">
+                </picture>
+            </h1>
+        </article>
+    </div>
     <header class="main-header">
 
         <nav class="container main-nav">
 
             <h1 class="brand-name">
-                <a href="#" title="Piccadely">
+                <a href="index.html" title="Piccadely">
                     <picture>
                         <source srcset="assets/images/piccadely-logo.svg" type="image/svg+xml">
                         <source srcset="assets/images/piccadely-logo.png 1x, assets/images/piccadely-logo@2x.png 2x" media="(min-width: 300px)">
@@ -76,13 +91,13 @@
             </div><!--//.navbar-desktop-->
             
             <div class="pedi-wrapper">
-                <a href="#" class="main-pedidos" title="Pedí Online">
+                <a href="https://www.piccadely.com.ar/pedidosonline/" class="main-pedidos" title="Pedí Online">
                     Pedí Online
                 </a>
                 <a class="tel-pedidos" href="tel:1163685885" target="_blank" title="Telephone">
                     6368-5885
                 </a>
-                <a class="wa-pedidos" href="https://wa.me/549116239-3600" target="_blank" title="whatsapp">
+                <a class="wa-pedidos" href="https://wa.me/5491162393600" target="_blank" title="whatsapp">
                     116239-3600
                 </a>
             </div>
@@ -170,71 +185,9 @@
     </header><!--//.main-header-->
 
     <main class="main-wrapper" role="main">
-        <div class="inner-wrapper">
-            <section id="hometest" style="padding: 1em 0">
-                <div class="container">
-                    <h2 style="margin: 1em 0; font-size: 1.5rem">
-                        Título
-                    </h2>
-                    
-                    <p style="margin: 1em 0">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut minim veniam.
-                    </p>
-            
-                    <p style="margin: 1em 0">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p style="margin: 1em 0">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
+        <div class="inner-wrapper page-wrapper">
 
-                <div class="container">
-                    <h2 style="margin: 1em 0; font-size: 1.5rem">
-                        Título
-                    </h2>
-                    
-                    <p style="margin: 1em 0; font-family: 'HeadingProTrial'">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut minim veniam.
-                    </p>
             
-                    <p style="margin: 1em 0; font-family: 'HeadingProTrial'">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p style="margin: 1em 0; font-family: 'HeadingProTrial'">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p style="margin: 1em 0; font-family: 'HeadingProTrial'">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-
-                <div class="container">
-                    <h2 style="margin: 1em 0; font-size: 1.5rem">
-                        Título
-                    </h2>
-                    
-                    <p style="margin: 1em 0; font-family: 'HeadingProTrial'">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut minim veniam.
-                    </p>
-            
-                    <p style="margin: 1em 0; font-family: 'HeadingProTrial'">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p style="margin: 1em 0; font-family: 'HeadingProTrial'">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p style="margin: 1em 0; font-family: 'HeadingProTrial'">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-            </section>
 
         </div><!--//.inner-wrapper-->
     </main><!--//.main-wrapper-->
@@ -328,7 +281,7 @@
                 </div>
 
                 <div class="col-footer tel-footer">
-                    <a class="wa-pedidos" href="https://wa.me/549116239-3600" target="_blank" title="whatsapp">
+                    <a class="wa-pedidos" href="https://wa.me/5491162393600" target="_blank" title="whatsapp">
                         116239-3600
                     </a>
                     <a class="tel-pedidos" href="tel:1153685885" target="_blank" title="Telephone">
@@ -347,7 +300,9 @@
     </div>
 
 </div><!--//.site-wrapper-->
-
+<!--tiny-slider js-->
+<script type="text/javascript" src="assets/js/tiny-slider/tiny-slider.min.js"></script>
+<!--custom js-->
 <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>

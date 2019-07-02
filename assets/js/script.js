@@ -7,9 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
             $loader = document.getElementById('loader');
             $loader.classList.add('closed');
             setTimeout(function(){
+                $loader.style.display = 'none';
+            },1100);
+
+            setTimeout(function(){
                 initAnimations();
             },500);
-    }, 2000);
+    }, 500);
     
     /*
      * TOGGLE menu-movil
@@ -22,29 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-
-window.addEventListener('load', function() {
-
-    /*
-     * SLIDER HOME
-    */
-    var slider = tns({
-        container: '#sliderHome',
-        mode: 'gallery',
-        items: 1,
-        slideBy: 'page',
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayButtonOutput:false,
-        controls: false,
-        //nav: false,
-        arrowKeys:true,
-        //animateIn: 'tns-fadeIn',
-        //animateOut: 'tns-fadeOut',
-        speed: 700,
-    });
-
-});
 
 /*
  * FUNCIONES

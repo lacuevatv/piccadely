@@ -1,0 +1,134 @@
+.page-wrapper {
+    position: relative;
+    font-family: $fuente-principal-book;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding-bottom: 1.5em;
+    @media (min-width: $sm) {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        padding-bottom: 1em;
+    }
+
+    strong {
+        font-family: $fuente-principal;
+    }
+    em {
+        font-family: $fuente-principal;
+        font-style: italic;
+    }
+
+    a {
+        text-decoration: underline;
+        color: inherit;
+        cursor: pointer;
+
+        &:hover {
+            zoom: 1;
+            opacity: 0.9;
+        }
+    }
+
+    h2, h3, h4, h5, h6 {
+        font-family: $fuente-principal;
+        margin: 1em 0 .5em;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        @media (min-width: $sm) {
+            font-size: 2.3rem;
+            line-height: 2.3rem;
+        }
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        @media (min-width: $sm) {
+            font-size: 1.75rem;
+            line-height: 1.8rem;
+        }
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        @media (min-width: $sm) {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    p {
+        margin: 1em 0;
+    }
+
+    .align-justify {
+        text-align: justify;
+    }
+
+    
+}//.page-wrapper
+
+.header-page {
+    margin-bottom: 3em;
+}//.header-page
+
+.header-page-black {
+    background-color: $color-negro;
+    color: $color-blanco;
+}
+
+.header-bk-side-efect {
+    background-color: transparent!important;
+    background-image: url(../images/bk-efect-negro.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: .5em 0;
+    @media (min-width: $md) {
+        padding: 1em 0;
+    }
+    @media (min-width: $lg) {
+        padding: 1.5em 0;
+    }
+    @media (min-width: $xlg) {
+        padding: 3em 0;
+    }
+}
+
+.title-page {
+    font-family: $fuente-secundaria;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    @media (min-width: $md) {
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+    }
+}//.title-page
+
+.title-page-black {}//.title-page-black
+
+.main-page {}
+
+.title-logo {
+    position: relative;
+    padding-left: 1.3em;
+    padding-right: .5em;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url(../images/loader.png);
+        background-repeat: no-repeat;
+        background-size: 1em auto;
+    }
+}
