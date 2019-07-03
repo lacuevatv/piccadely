@@ -3,7 +3,7 @@
     width: 100%;
     padding-left: $GlobalPadding;
     padding-right: $GlobalPadding;
-    @media (min-width: $md) {
+    @media (min-width: $sm) {
         padding-left: $GlobalPaddingSM;
         padding-right: $GlobalPaddingSM;
     }
@@ -90,4 +90,118 @@
     @extend .row-md;
     @extend .row-justify-center;
     @extend .row-justify-center;  
+}
+
+.col {
+    flex-grow: 1;
+}
+
+.col-1 {
+    width: 10%;
+}
+.col-2 {
+    width: 20%;
+}
+.col-25 {
+    width: 25%;
+}
+.col-3 {
+    width: 30%;
+}
+.col-33 {
+    width: 33.33%;
+}
+.col-4 {
+    width: 40%;
+}
+.col-5 {
+    width: 50%;
+}
+.col-6 {
+    width: 60%;
+}
+.col-7 {
+    width: 70%;
+}
+.col-75 {
+    width: 75%;
+}
+.col-8 {
+    width: 80%;
+}
+.col-9 {
+    width: 90%;
+}
+.col-10 {
+    width: 100%;
+}
+
+.col {
+    flex-grow: 1;
+}
+
+.col-1-md {
+    @media (min-width: $md) {
+        width: 10%;
+    }
+}
+.col-2-md {
+    @media (min-width: $md) {
+        width: 20%;
+    }
+}
+.col-25-md {
+    @media (min-width: $md) {
+        width: 25%;
+    }
+}
+.col-3-md {
+    @media (min-width: $md) {
+        width: 30%;
+    }
+}
+.col-33-md {
+    @media (min-width: $md) {
+        width: 33.33%;
+    }
+}
+.col-4-md {
+    @media (min-width: $md) {
+        width: 40%;
+    }
+}
+.col-5-md {
+    @media (min-width: $md) {
+        width: 50%;
+    }
+}
+.col-6-md {
+    @media (min-width: $md) {
+        width: 60%;
+    }
+}
+.col-7-md {
+    @media (min-width: $md) {
+        width: 70%;
+    }
+}
+.col-75-md {
+    @media (min-width: $md) {
+        width: 75%;
+    }
+}
+.col-8-md {
+    @media (min-width: $md) {
+        width: 80%;
+    }
+}
+.col-9-md {
+    @media (min-width: $md) {
+        width: 90%;
+    }
+}
+.col-10-md {
+    @media (min-width: $md) {
+        width: 100%;
+    }
 }

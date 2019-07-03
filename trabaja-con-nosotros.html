@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Piccadely</title>
+<!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#ef4a23">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+<!-- TinySlider -->
+    <link href="assets/css/tiny-slider.css" rel="stylesheet">
+    <!--[if (lt IE 9)]><script src="assets/js/tiny-slider/tiny-slider.helper.ie8.js"></script><![endif]-->
+<!-- Custom CSS -->
+    <link href="assets/css/style.css?1.0" rel="stylesheet">
+
+</head>
+<body>
+<div class="site-wrapper">
+    <div id="loader" class="loader">
+        <article class="loading">
+            <h1>
+                <picture>
+                    <source srcset="assets/images/loader.svg" type="image/svg+xml">
+                    <source srcset="assets/images/loader.png 1x, assets/images/loader@2x.png 2x" media="(min-width: 300px)">
+                    <img class="image-loader" src="assets/images/loader.png" alt="Piccadely loader">
+                </picture>
+            </h1>
+        </article>
+    </div>
+    <header class="main-header">
+
+        <nav class="container main-nav">
+
+            <h1 class="brand-name">
+                <a href="index.html" title="Piccadely">
+                    <picture>
+                        <source srcset="assets/images/piccadely-logo.svg" type="image/svg+xml">
+                        <source srcset="assets/images/piccadely-logo.png 1x, assets/images/piccadely-logo@2x.png 2x" media="(min-width: 300px)">
+                        <img src="assets/images/piccadely-logo.png" alt="Piccadely logo">
+                    </picture>
+                    <span class="sr-only">Piccadely</span>
+                </a>
+            </h1>
+
+            <div class="navbar-desktop-wrapper">
+                <ul class="sup-menu-desktop">
+                    <li>
+                        <a href="sucursales.html">
+                            Sucursales
+                        </a>
+                    </li>
+                    <li>
+                        <a href="zonas-entrega.html">
+                            Zona de entrega
+                        </a>
+                    </li>
+                    <li>
+                        <a href="promos.html">
+                            Promos
+                        </a>
+                    </li>
+                </ul>
+                <ul class="main-menu-desktop">
+                    <li>
+                        <a href="pedi-picadas.html">
+                            Pedí <strong>picadas</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="regala-felicidad.html">
+                            Regalá <strong>felicidad</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="compra-marketdely.html">
+                            Comprá <strong>Marketdely</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="planifica-encuentros.html">
+                            Planificá <strong>encuentros</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div><!--//.navbar-desktop-->
+            
+            <div class="pedi-wrapper">
+                <a href="https://www.piccadely.com.ar/pedidosonline/" class="main-pedidos" title="Pedí Online">
+                    Pedí Online
+                </a>
+                <a class="tel-pedidos" href="tel:1163685885" target="_blank" title="Telephone">
+                    6368-5885
+                </a>
+                <a class="wa-pedidos" href="https://wa.me/5491162393600" target="_blank" title="whatsapp">
+                    116239-3600
+                </a>
+            </div>
+
+            <button id="toggle" class="toggle" aria-controls="navMobile" aria-expanded="false">
+                <span class="tog tog1"></span>
+                <span class="tog tog2"></span>
+                <span class="tog tog3"></span>
+                <span class="sr-only">Menú</span>
+            </button>
+            
+            <div id="navMobile" class="navbar-mobile-wrapper">
+                <figure class="menu-mobile-image">
+                    <img src="assets/images/menu-mobile-img.jpg" alt="Menu Image">
+                </figure>
+                <ul class="menu-mobile">
+                    <li>
+                        <a href="#" class="special-link">
+                            Conquistadores de encuentros
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pedi-picadas.html" class="mini-link">
+                            Pedí <strong>picadas</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="regala-felicidad.html" class="mini-link">
+                            Regalá <strong>felicidad</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="compra-marketdely.html" class="mini-link">
+                            Comprá <strong>Marketdely</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="planifica-encuentros.html" class="mini-link">
+                            Planificá <strong>encuentros</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="promos.html">
+                            Promos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sucursales.html">
+                            Sucursales
+                        </a>
+                    </li>
+                    <li>
+                        <a href="zonas-entrega.html">
+                            Zonas de entrega
+                        </a>
+                    </li>
+                    <li>
+                        <a href="preguntas-frecuentes.html">
+                            Preguntas frecuentes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="trabaja-con-nosotros.html">
+                            Trabaja con nosotros
+                        </a>
+                    </li>
+                    <li>
+                        <a href="terminos-condiciones.html">
+                            Términos y condiciones
+                        </a>
+                    </li>
+                </ul>
+
+                <a class="logo-gris" href="#" title="Piccadely">
+                    <picture>
+                        <source srcset="assets/images/piccadely-logo-gris.svg" type="image/svg+xml">
+                        <source srcset="assets/images/piccadely-logo-gris.png 1x, assets/images/piccadely-logo-gris@2x.png 2x" media="(min-width: 300px)">
+                        <img src="assets/images/piccadely-logo-gris.png" alt="Piccadely logo">
+                    </picture>
+                    <span class="sr-only">Piccadely</span>
+                </a>
+            </div><!--//.navbar-mobile-->
+        </nav><!--//.main-nav-->
+
+    </header><!--//.main-header-->
+
+    <main class="main-wrapper" role="main">
+        <div class="inner-wrapper page-wrapper">
+
+            <header class="header-page header-page-black header-bk-side-efect">
+                <div class="container">
+                    <h1 class="title-page">
+                        Trabaja con nosotros
+                    </h1>
+                </div>
+            </header>
+
+            <div class="main-page">
+                <div class="container">
+                    <h2 class="title-logo">
+                        Título
+                    </h2>
+
+                    <p class="align-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                
+                <form method="POST" name="trabaja-con-nosotros-form" enctype="multipart/form-data" class="formulario formulario-back-white">
+
+                    <h2 class="title-logo">
+                        Cargá tus datos
+                    </h2>
+                    <p class="nota-small nota-small-titulo-logo">
+                        <sup>*</sup>Datos obligatorios
+                    </p>
+
+                    <div class="form-row row-justify-space-bw">
+
+                        <div class="form-input col col-10 col-md-25">
+                            <label for="name">Nombre<sup>*</sup></label>
+                            <input class="full" type="text" name="name" placeholder="Juan">
+                        </div>
+
+                        <div class="form-input col col-10 col-md-25">
+                            <label for="lastname">Apellido<sup>*</sup></label>
+                            <input class="full" type="text" name="lastname" placeholder="Perez">
+                        </div>
+
+                        <div class="form-input col-3 col-md-2">
+                            <label for="dni">DNI<sup>*</sup></label>
+                            <input class="full" type="text" name="dni" placeholder="XX.XXX.XXX">
+                        </div>
+
+                        <div class="form-input row-justify-space-bw col-7 col-md-2">
+                            <label for="birthday">Fecha de nacimiento<sup>*</sup></label>
+                            <select name="birthday" class="col-3">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27" selected>27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select name="monthday" class="col-3">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12" selected>12</option>
+                            </select>
+                            <select name="yearday" class="col-3">
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990" selected>1990</option>
+                                <option value="1989">1989</option>
+                                <option value="1988">1988</option>
+                                <option value="1987">1987</option>
+                                <option value="1986">1986</option>
+                                <option value="1985">1985</option>
+                                <option value="1984">1984</option>
+                                <option value="1983">1983</option>
+                                <option value="1982">1982</option>
+                                <option value="1981">1981</option>
+                                <option value="1980">1980</option>
+                                <option value="1979">1979</option>
+                                <option value="1978">1978</option>
+                                <option value="1977">1977</option>
+                                <option value="1976">1976</option>
+                                <option value="1975">1975</option>
+                                <option value="1974">1974</option>
+                                <option value="1973">1973</option>
+                                <option value="1972">1972</option>
+                                <option value="1971">1971</option>
+                                <option value="1970">1970</option>
+                                <option value="1969">1969</option>
+                                <option value="1968">1968</option>
+                                <option value="1967">1967</option>
+                                <option value="1966">1966</option>
+                                <option value="1965">1965</option>
+                                <option value="1964">1964</option>
+                                <option value="1963">1963</option>
+                                <option value="1962">1962</option>
+                                <option value="1961">1961</option>
+                                <option value="1960">1960</option>
+                                <option value="1959">1959</option>
+                                <option value="1958">1958</option>
+                                <option value="1957">1957</option>
+                                <option value="1956">1956</option>
+                                <option value="1955">1955</option>
+                                <option value="1954">1954</option>
+                                <option value="1953">1953</option>
+                                <option value="1952">1952</option>
+                                <option value="1951">1951</option>
+                                <option value="1950">1950</option>
+                                <option value="1949">1949</option>
+                                <option value="1948">1948</option>
+                                <option value="1947">1947</option>
+                                <option value="1946">1946</option>
+                                <option value="1945">1945</option>
+                                <option value="1944">1944</option>
+                                <option value="1943">1943</option>
+                                <option value="1942">1942</option>
+                                <option value="1941">1941</option>
+                                <option value="1940">1940</option>
+                            </select>
+                        </div>
+
+                    </div><!--form-row-->
+
+                    <div class="form-row row-justify-space-bw">
+                        <div class="form-input col-10 col-md-2">
+                            <label for="sexo">Sexo<sup>*</sup></label>
+                            <span class="sub-label">Masculino
+                                <input type="radio" name="sexo" value="Masculino">
+                            </span>
+                            <span class="sub-label">Femenino
+                                <input type="radio" name="sexo" value="Femenino">
+                            </span>
+                        </div>
+                        <div class="form-input col-10 col-md-2">
+                            <label for="civil-status">Estado Civil<sup>*</sup></label>
+                            <select class="full"  name="civil-status">
+                                <option value="soltero">Soltero/a</option>
+                                <option value="casado">Casado/a</option>
+                                <option value="divorciado">Divorciado/a</option>
+                                <option value="viudo">Viudo/a</option>
+                            </select>
+                        </div>
+                        <div class="form-input col col-10 col-md-4">
+                            <label for="email">Email<sup>*</sup></label>
+                            <input class="full"  type="text" name="email" placeholder="juan@perez.com.ar">
+                        </div>
+                        <div class="form-input col col-10 col-md-2">
+                            <label for="tel">Teléfono/Celular<sup>*</sup></label>
+                            <input class="full"  type="text" name="tel" placeholder="0111552225555">
+                        </div>
+                    </div><!--form-row-->
+
+                    <div class="form-row row-justify-space-bw">
+                        <div class="form-input col col-10 col-md-5">
+                            <label for="address">Dirección<sup>*</sup></label>
+                            <input class="full"  type="text" name="address" placeholder="Avenida Alvarez Thomas 1552">
+                        </div>
+                        <div class="form-input col col-6 col-md-3">
+                            <label for="city">Localidad<sup>*</sup></label>
+                            <input class="full" type="text" name="city" placeholder="Capital Federal">
+                        </div>
+                        <div class="form-input col col-4 col-md-2">
+                            <label for="postal-code">Código Postal<sup>*</sup></label>
+                            <input class="full" type="text" name="postal-code" placeholder="1427">
+                        </div>
+                    </div><!--form-row-->
+
+                    <h3 class="title-logo">
+                        CV y puesto
+                    </h3>
+                    <p class="nota-small nota-small-titulo-logo">
+                        <sup>*</sup>Datos obligatorios
+                    </p>
+
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="puesto">Seleccioná el área en la que querés postularte<sup>*</sup></label>
+                            <select class="full" name="puesto">
+                                <option value="administracion">Administración</option>
+                                <option value="comercial">Comercial</option>
+                                <option value="cocina">Cocina</option>
+                                <option value="marketing">Marketing</option>
+                            </select>
+                        </div>
+                        <div class="form-input">
+                            <label for="cv">Adjuntá tu CV<sup>*</sup></label>
+                            <input type="file" name="cv" placeholder="Seleccioná tu archivo">
+                        </div>
+                    </div><!--form-row-->
+
+                    <div class="form-row">
+                        <button class="btn btn-form-orange" type="submit">Enviá</button>
+                    </div><!--form-row-->
+                    
+                </form>
+            </div><!--.form-wrapper-->
+
+        </div><!--//.inner-wrapper-->
+    </main><!--//.main-wrapper-->
+
+    <footer class="main-footer">
+        
+        <div class="container">
+
+            <div class="row">
+                <div class="col-footer nav-footer-wrapper">
+                    <ul class="nav-footer">
+                        <li>
+                            <a href="promos.html" title="promos">
+                                Promos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sucursales.html" title="Sucursales">
+                                Sucursales
+                            </a>
+                        </li>
+                        <li>
+                            <a href="zonas-entrega.html" title="Zonas de entrega">
+                                Zonas de entrega
+                            </a>
+                        </li>
+                        <li>
+                            <a href="preguntas-frecuentes.html" title="Preguntas frecuentes">
+                                Preguntas frecuentes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="trabaja-con-nosotros.html" title="Trabajá con nosotros">
+                                Trabajá con nosotros
+                            </a>
+                        </li>
+                        <li>
+                            <a href="terminos-condiciones.html" title="Términos y condiciones">
+                                Términos y condiciones
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-footer delivery-wrapper">
+                    <h3>
+                        30%Off
+                    </h3>
+                    <p class="tagline">
+                        Pidiendo directo por cualquiera de nuestros canales
+                    </p>
+                    <ul class="delivery-list">
+                        <li>
+                            <h4>
+                                Delivery
+                            </h4>
+                            <p>
+                                $<strong class="fuente-principal">80</strong> si querés que te la enviemos
+                            </p>
+                        </li>
+                        <li>
+                            <h4>
+                                Take away
+                            </h4>
+                            <p>
+                                Si retirás vos en <strong class="fuente-principal">15</strong> minutos la tenés.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-footer medios-pago-wrapper">
+                    <h3>
+                        Medios de pago
+                    </h3>
+                    <h4>
+                        Factura A
+                    </h4>
+                    <p>
+                        Solicitala antes de terminar tu pedido.
+                    </p>
+
+                    <h5>
+                        Efectivo, crédito y débito
+                    </h5>
+                    <picture>
+                        <source srcset="assets/images/tarjetas.png 1x, assets/images/tarjetas@2x.png 2x" media="(min-width: 300px)">
+                        <img class="tarjetas" src="assets/images/tarjetas.png" alt="Medios de pago">
+                    </picture>
+                    
+                </div>
+
+                <div class="col-footer tel-footer">
+                    <a class="wa-pedidos" href="https://wa.me/5491162393600" target="_blank" title="whatsapp">
+                        116239-3600
+                    </a>
+                    <a class="tel-pedidos" href="tel:1153685885" target="_blank" title="Telephone">
+                        5368-5885
+                    </a>
+                </div>
+            </div>
+
+        </div><!--//.container--> 
+    </footer><!--//.main-footer-->
+
+    <div class="button-chat-wrapper container">
+        <button class="btn chat-felicidad-button">
+            El chat de la felicidad
+        </button>
+    </div>
+
+</div><!--//.site-wrapper-->
+<!--tiny-slider js-->
+<script type="text/javascript" src="assets/js/tiny-slider/tiny-slider.min.js"></script>
+<!--custom js-->
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

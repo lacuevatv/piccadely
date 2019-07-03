@@ -76,10 +76,10 @@ header, section, footer, aside {
 }
 
 /*input al 100%*/
-input, select {
+/*input, select {
     display: block;
     width: 100%;
-}
+}*/
 /*elimina el diseño por defecto en el iphone*/
 input[type=submit] {
     -webkit-appearance: none;
