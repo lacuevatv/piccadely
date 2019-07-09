@@ -298,6 +298,8 @@
     }
 }//.formulario-back-white
 
+
+//SUCURSALES
 .sucursales-list {
     margin-bottom: 2em;
     li {
@@ -406,3 +408,101 @@
     }//.sucursal
 
 }//.sucursales-list
+
+
+//ZONAS DE ENTREGA
+.zona-entrega-wrapper {
+    position: relative;
+    z-index: 1;
+    top: -2em;
+    margin-bottom: -2em;
+    overflow: hidden;
+    height: 500px;
+    @media (min-width: $sm) {
+        height: 700px;
+    }
+    @media (min-width: $md) {
+        height: 500px;
+    }
+    @media (min-width: $lg) {
+        height: 600px;
+    }
+    @media (min-width: $xlg) {
+        height: 800px;
+    }
+
+    .buttons-zoom-map {
+        position: absolute;
+        z-index: 2;
+        right: 2em;
+        bottom: 2em;
+        width: 50px;
+        height: 100px;
+        color: #726d6e;
+        background: $color-blanco;
+        @include box-shadow(2px 3px 6px $color-negro);
+
+        .btn-zoom {
+            @extend .btn;
+            display: block;
+            width: 30px;
+            height: 50px;
+            position: relative;
+            margin: 0 auto;
+
+            &:before {
+                content: attr(data-signo);
+                font-size: 250%;
+                vertical-align: -webkit-baseline-middle;
+            }
+
+            &:first-child {
+                border-bottom: 1px solid #c1c1c1;
+            }
+    
+        }//.btn-zoom
+
+
+    }//.buttons-zoom-map
+
+    .mapa {
+        position: absolute;
+        z-index: 1;
+        height: auto;
+        width: 768px;
+        left: -220px;
+        top: -150px;
+        zoom: 1.4;
+        @media (min-width: $xs) {
+            width: 960px;
+            left: -300px;
+            top: -270px;
+            zoom: 1.3;
+        }
+        @media (min-width: $sm) {
+            width: 1366px;
+            top: -400px;
+            left: -210px;
+            zoom: 1.3;
+        }
+        @media (min-width: $md) {
+            width: 1366px;
+            left: -80px;
+            top: -430px;
+            zoom: 1.3;
+        }
+        @media (min-width: $lg) {
+            width: 1680px;
+            left: 0px;
+            top: -330px;
+            zoom: 1;
+        }
+        @media (min-width: $xlg) {
+            width: 1920px;
+            left: 0px;
+            top: -330px;
+            zoom: 1;
+        }
+        
+    }//.mapa
+}//.zona-entrega-wrapper

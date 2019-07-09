@@ -201,14 +201,14 @@ button {
 /*
  * HELPERS
 */
-.btn, .button-chat-wrapper .chat-felicidad-button, .main-footer .row .tel-footer .links-pedidos, .main-footer .row .tel-footer .tel-pedidos, .main-footer .row .tel-footer .wa-pedidos, .main-footer .row .nav-footer-wrapper .nav-footer li a, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a, .main-nav .pedi-wrapper .wa-pedidos, .main-nav .pedi-wrapper .tel-pedidos:before {
+.btn, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom, .button-chat-wrapper .chat-felicidad-button, .main-footer .row .tel-footer .links-pedidos, .main-footer .row .tel-footer .tel-pedidos, .main-footer .row .tel-footer .wa-pedidos, .main-footer .row .nav-footer-wrapper .nav-footer li a, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a, .main-nav .pedi-wrapper .wa-pedidos, .main-nav .pedi-wrapper .tel-pedidos:before {
   cursor: pointer;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-.btn:hover, .button-chat-wrapper .chat-felicidad-button:hover, .main-footer .row .tel-footer .links-pedidos:hover, .main-footer .row .tel-footer .tel-pedidos:hover, .main-footer .row .tel-footer .wa-pedidos:hover, .main-footer .row .nav-footer-wrapper .nav-footer li a:hover, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a:hover, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a:hover, .main-nav .pedi-wrapper .wa-pedidos:hover, .main-nav .pedi-wrapper .tel-pedidos:hover:before {
+.btn:hover, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom:hover, .button-chat-wrapper .chat-felicidad-button:hover, .main-footer .row .tel-footer .links-pedidos:hover, .main-footer .row .tel-footer .tel-pedidos:hover, .main-footer .row .tel-footer .wa-pedidos:hover, .main-footer .row .nav-footer-wrapper .nav-footer li a:hover, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a:hover, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a:hover, .main-nav .pedi-wrapper .wa-pedidos:hover, .main-nav .pedi-wrapper .tel-pedidos:hover:before {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -2662,6 +2662,113 @@ html, body {
   transition: all 0.5s;
   height: 110%;
   width: 100%;
+}
+
+.zona-entrega-wrapper {
+  position: relative;
+  z-index: 1;
+  top: -2em;
+  margin-bottom: -2em;
+  overflow: hidden;
+  height: 500px;
+}
+@media (min-width: 767px) {
+  .zona-entrega-wrapper {
+    height: 700px;
+  }
+}
+@media (min-width: 992px) {
+  .zona-entrega-wrapper {
+    height: 500px;
+  }
+}
+@media (min-width: 1260px) {
+  .zona-entrega-wrapper {
+    height: 600px;
+  }
+}
+@media (min-width: 1680px) {
+  .zona-entrega-wrapper {
+    height: 800px;
+  }
+}
+.zona-entrega-wrapper .buttons-zoom-map {
+  position: absolute;
+  z-index: 2;
+  right: 2em;
+  bottom: 2em;
+  width: 50px;
+  height: 100px;
+  color: #726d6e;
+  background: #fff;
+  -webkit-box-shadow: 2px 3px 6px #231f20;
+  -moz-box-shadow: 2px 3px 6px #231f20;
+  -ms-box-shadow: 2px 3px 6px #231f20;
+  box-shadow: 2px 3px 6px #231f20;
+}
+.zona-entrega-wrapper .buttons-zoom-map .btn-zoom {
+  display: block;
+  width: 30px;
+  height: 50px;
+  position: relative;
+  margin: 0 auto;
+}
+.zona-entrega-wrapper .buttons-zoom-map .btn-zoom:before {
+  content: attr(data-signo);
+  font-size: 250%;
+  vertical-align: -webkit-baseline-middle;
+}
+.zona-entrega-wrapper .buttons-zoom-map .btn-zoom:first-child {
+  border-bottom: 1px solid #c1c1c1;
+}
+.zona-entrega-wrapper .mapa {
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  width: 768px;
+  left: -220px;
+  top: -150px;
+  zoom: 1.4;
+}
+@media (min-width: 500px) {
+  .zona-entrega-wrapper .mapa {
+    width: 960px;
+    left: -300px;
+    top: -270px;
+    zoom: 1.3;
+  }
+}
+@media (min-width: 767px) {
+  .zona-entrega-wrapper .mapa {
+    width: 1366px;
+    top: -400px;
+    left: -210px;
+    zoom: 1.3;
+  }
+}
+@media (min-width: 992px) {
+  .zona-entrega-wrapper .mapa {
+    width: 1366px;
+    left: -80px;
+    top: -430px;
+    zoom: 1.3;
+  }
+}
+@media (min-width: 1260px) {
+  .zona-entrega-wrapper .mapa {
+    width: 1680px;
+    left: 0px;
+    top: -330px;
+    zoom: 1;
+  }
+}
+@media (min-width: 1680px) {
+  .zona-entrega-wrapper .mapa {
+    width: 1920px;
+    left: 0px;
+    top: -330px;
+    zoom: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /*
- * FUNCIONES
+ * FUNCIONES UTILIZADAS EN LAS PAGINAS
 */
 function openCloseMobileMenu() {
     $toggle = document.getElementById('toggle');
@@ -80,6 +80,7 @@ function initAnimations() {
     }
 }
 
+//chequea si un elemento es visible
 function isVisible ( el ) {
     var result = false;
     // Browser viewport
@@ -96,4 +97,100 @@ function isVisible ( el ) {
     }
     
     return result;
+}
+
+
+
+function sucursalesInit() {
+    var windowWidth = window.innerWidth,
+        titulo = document.querySelector('#title-change');
+
+    if ( windowWidth < 769 ) {
+        titulo.innerText = titulo.getAttribute('data-title-movil');
+    } else {
+        titulo.innerText = titulo.getAttribute('data-title');
+    }
+
+    var botones = document.querySelectorAll('.ver-mapa-btn');
+
+    for (var i = 0; i < botones.length; i++) {
+        botones[i].addEventListener('click', function(){
+            
+            titulo.innerText = this.getAttribute('data-title');
+            
+            var mapa = this.parentElement.querySelector('.wrapper-map-sucursal');
+            mapa.classList.add('wrapper-map-sucursal-open');
+    
+        });
+        
+    }
+
+    if ( windowWidth < 769 ) {
+        titulo.addEventListener('click', function(){
+            var opens = document.querySelectorAll('.wrapper-map-sucursal-open');
+
+            if ( opens.length > 0) {
+                for (var j = 0; j < opens.length; j++) {
+                    opens[j].classList.remove('wrapper-map-sucursal-open');
+                }
+            }
+
+            sucursalesInit();
+        });
+    }
+    
+    window.addEventListener('resize', sucursalesInit);
+
+}
+
+//ejecuta las funciones del mapa en la pagina zonas de entrega
+function mapaZonasInit() {
+    var btnZoomIn  = document.querySelector('#zoom-in-map'),
+        btnZoomOut = document.querySelector('#zoom-out-map');
+
+        btnZoomIn.addEventListener('click', function(){
+            zoomMapZona('zoomIn');
+        });
+        btnZoomOut.addEventListener('click', function(){
+            zoomMapZona('zoomOut');
+        });
+
+
+    window.addEventListener('resize', mapaZonasInit);
+}
+
+//hace el zoom del mapa que es una imagen
+function zoomMapZona(zoom) {
+    var mapa = document.querySelector('#mapa');
+    var rect = mapa.getBoundingClientRect();
+
+    if ( window.innerWidth == rect.width) {
+        return;
+    }
+
+    switch (zoom) {
+
+        case 'zoomIn':
+            if ( mapa.style.zoom == '' ) {
+                mapa.style.zoom = 1.5;
+            } else {
+                if ( parseFloat(mapa.style.zoom) < 3 ) {
+                    mapa.style.zoom = parseFloat(mapa.style.zoom) + 0.5;
+                }
+            }
+            
+        break;
+    
+        case 'zoomOut':
+            if ( window.innerWidth == rect.width) {
+                return;
+            }
+            if (mapa.style.zoom != '') {
+                if ( parseFloat(mapa.style.zoom) > 1 ) {
+                    mapa.style.zoom = parseFloat(mapa.style.zoom) - 0.5;
+                }
+            }
+            
+        break;
+    }
 }
