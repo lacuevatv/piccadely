@@ -72,6 +72,13 @@
     
 }//.page-wrapper
 
+.checkout-page {
+    background-color: $color-blanco;
+    @media (min-width: $md) {
+        background-color: transparent;
+    }
+}
+
 .header-page {
     margin-bottom: 3em;
     position: relative;
@@ -145,8 +152,17 @@
 
 .nota-small {
     font-size: .75rem;
+    line-height: 1rem;
     font-family: $fuente-secundaria;
     font-weight: 100;
+}
+
+.nota-small-right {
+    text-align: right;
+    padding-right: 1em;
+    @media (min-width: $md) {
+        padding-top: .2em;
+    }
 }
 
 .nota-small-titulo-logo {
@@ -156,6 +172,27 @@
     top: -20px;
 }
 
+.nota-small-zonas-link {
+    margin-bottom: 1em; 
+    text-align: right;
+    margin-bottom: 1em;
+    position: relative;
+    top: -1.5em;
+    > a {
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 150%;
+        line-height: 150%;
+        &:after {
+            content: '>';
+            margin-left: 3px;
+        }
+    }
+}
+
+
+//formularios
 .formulario {
     margin-top: 3em;
     padding-top: .5em;
@@ -184,6 +221,27 @@
         margin-right: 4.5em;
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+    
+    .column-form {
+        @media (min-width: $md) {
+            background-color: $color-blanco;
+            padding: 0 1em 1em;
+        }
+    }//.column-form
+
+    .title-section {
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        border-bottom: 1px solid $color-naranja;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: .7em;
+        @media (min-width: $md) {
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
     }
 
     .form-row {
@@ -241,11 +299,19 @@
             }
         }
 
+        label.label-hide {
+            display: none;
+        }
+
         input, select {
             border: 1px solid rgba(0,0,0,0.3);
             border-radius: 5px;
             padding: .5rem;
             background-color: transparent;
+        }
+
+        select {
+            height: 30px;
         }
 
         input[type="file"] {
@@ -273,7 +339,7 @@
 
     .btn-form-orange {
         width: 100%;
-        max-width: 420px;
+        max-width: 400px;
         display: block;
         border-radius: 10px;
         background-color: $color-naranja;
@@ -289,6 +355,23 @@
         }
     }
 
+    .btn-gris {
+        width: 80px;
+        height: 40px;
+        display: block;
+        border-radius: 5px;
+        background-color: #989898;
+        color: $color-blanco;
+        font-size: 1rem;
+        padding: .2rem .5rem;
+        font-family: $fuente-secundaria;
+        font-weight: 700;
+        text-transform: uppercase;
+        @media (min-width: $md) {
+            font-size: 1.5rem;
+        }
+    }
+
 }//.form-wrapper
 
 .formulario-back-white {
@@ -298,6 +381,47 @@
     }
 }//.formulario-back-white
 
+.formulario-checkout {
+
+    .back-btn {
+        @extend .btn;
+        color: $color-naranja;
+        text-decoration: none;
+        font-family: $fuente-secundaria;
+        font-size: 1rem;
+        font-weight: 100;
+
+        &:before {
+            content: '<';
+            margin-right: .2rem;
+        }
+    }
+
+    .total-checkout {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: right;
+        border-top: 1px solid $color-naranja;
+        padding-top: 1rem;
+        margin-top: 1em;
+
+        p {
+            margin: .3em 0;
+        }
+    }
+
+    .form-row-billete {
+        margin-bottom: 0;
+        margin-top: .5em;
+    }
+    .form-row-billete-nota {
+        position: relative;
+        top: -1em;
+        @media (min-width: $md) {
+            top: .5em;
+        }
+    }
+}//.formulario-checkout
 
 //SUCURSALES
 .sucursales-list {

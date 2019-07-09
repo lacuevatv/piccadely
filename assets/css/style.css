@@ -201,14 +201,14 @@ button {
 /*
  * HELPERS
 */
-.btn, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom, .button-chat-wrapper .chat-felicidad-button, .main-footer .row .tel-footer .links-pedidos, .main-footer .row .tel-footer .tel-pedidos, .main-footer .row .tel-footer .wa-pedidos, .main-footer .row .nav-footer-wrapper .nav-footer li a, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a, .main-nav .pedi-wrapper .wa-pedidos, .main-nav .pedi-wrapper .tel-pedidos:before {
+.btn, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom, .formulario-checkout .back-btn, .button-chat-wrapper .chat-felicidad-button, .main-footer .row .tel-footer .links-pedidos, .main-footer .row .tel-footer .tel-pedidos, .main-footer .row .tel-footer .wa-pedidos, .main-footer .row .nav-footer-wrapper .nav-footer li a, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a, .main-nav .pedi-wrapper .wa-pedidos, .main-nav .pedi-wrapper .tel-pedidos:before {
   cursor: pointer;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-.btn:hover, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom:hover, .button-chat-wrapper .chat-felicidad-button:hover, .main-footer .row .tel-footer .links-pedidos:hover, .main-footer .row .tel-footer .tel-pedidos:hover, .main-footer .row .tel-footer .wa-pedidos:hover, .main-footer .row .nav-footer-wrapper .nav-footer li a:hover, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a:hover, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a:hover, .main-nav .pedi-wrapper .wa-pedidos:hover, .main-nav .pedi-wrapper .tel-pedidos:hover:before {
+.btn:hover, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom:hover, .formulario-checkout .back-btn:hover, .button-chat-wrapper .chat-felicidad-button:hover, .main-footer .row .tel-footer .links-pedidos:hover, .main-footer .row .tel-footer .tel-pedidos:hover, .main-footer .row .tel-footer .wa-pedidos:hover, .main-footer .row .nav-footer-wrapper .nav-footer li a:hover, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a:hover, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a:hover, .main-nav .pedi-wrapper .wa-pedidos:hover, .main-nav .pedi-wrapper .tel-pedidos:hover:before {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -219,6 +219,10 @@ button {
 
 .fuente-principal {
   font-family: "BebasNeue", sans-serif !important;
+}
+
+.no-margin {
+  margin: 0 !important;
 }
 
 /*--------------------------------------------------------------
@@ -510,12 +514,20 @@ html, body {
   }
 }
 
-.row-aling-center {
+.row-aling-center, .row-md-all-center  {
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
+}
+
+.row-aling-start {
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
 }
 
 .row-justify-center, .row-md-all-center  {
@@ -535,11 +547,19 @@ html, body {
 }
 
 .row-justify-space-ar {
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -o-justify-content: space-between;
-  justify-content: space-between;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.row-justify-end {
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .row-wrap {
@@ -647,8 +667,26 @@ html, body {
 }
 
 @media (min-width: 992px) {
+  .col-43-md {
+    width: 43%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-45-md {
+    width: 45%;
+  }
+}
+
+@media (min-width: 992px) {
   .col-5-md {
     width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-55-md {
+    width: 55%;
   }
 }
 
@@ -1840,7 +1878,7 @@ html, body {
   position: relative;
   z-index: 1;
   min-height: 200px;
-  padding-top: 80px;
+  padding-top: 74px;
 }
 @media (min-width: 767px) {
   .main-wrapper .inner-wrapper {
@@ -2310,6 +2348,15 @@ html, body {
   text-align: justify;
 }
 
+.checkout-page {
+  background-color: #fff;
+}
+@media (min-width: 992px) {
+  .checkout-page {
+    background-color: transparent;
+  }
+}
+
 .header-page {
   margin-bottom: 3em;
   position: relative;
@@ -2388,8 +2435,19 @@ html, body {
 
 .nota-small {
   font-size: 0.75rem;
+  line-height: 1rem;
   font-family: "HeadingProTrial", "BebasNeue", sans-serif;
   font-weight: 100;
+}
+
+.nota-small-right {
+  text-align: right;
+  padding-right: 1em;
+}
+@media (min-width: 992px) {
+  .nota-small-right {
+    padding-top: 0.2em;
+  }
 }
 
 .nota-small-titulo-logo {
@@ -2397,6 +2455,25 @@ html, body {
   margin: 0;
   position: relative;
   top: -20px;
+}
+
+.nota-small-zonas-link {
+  margin-bottom: 1em;
+  text-align: right;
+  margin-bottom: 1em;
+  position: relative;
+  top: -1.5em;
+}
+.nota-small-zonas-link > a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 150%;
+  line-height: 150%;
+}
+.nota-small-zonas-link > a:after {
+  content: ">";
+  margin-left: 3px;
 }
 
 .formulario {
@@ -2435,6 +2512,27 @@ html, body {
     margin-right: 4.5em;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .formulario .column-form {
+    background-color: #fff;
+    padding: 0 1em 1em;
+  }
+}
+.formulario .title-section {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid #ef4a23;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 0.7em;
+}
+@media (min-width: 992px) {
+  .formulario .title-section {
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
 .formulario .form-row {
@@ -2494,11 +2592,17 @@ html, body {
     font-size: 1.35rem;
   }
 }
+.formulario .form-input label.label-hide {
+  display: none;
+}
 .formulario .form-input input, .formulario .form-input select {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   padding: 0.5rem;
   background-color: transparent;
+}
+.formulario .form-input select {
+  height: 30px;
 }
 .formulario .form-input input[type=file] {
   border: none;
@@ -2520,7 +2624,7 @@ html, body {
 }
 .formulario .btn-form-orange {
   width: 100%;
-  max-width: 420px;
+  max-width: 400px;
   display: block;
   border-radius: 10px;
   background-color: #ef4a23;
@@ -2537,6 +2641,24 @@ html, body {
     font-size: 2rem;
   }
 }
+.formulario .btn-gris {
+  width: 80px;
+  height: 40px;
+  display: block;
+  border-radius: 5px;
+  background-color: #989898;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  font-family: "HeadingProTrial", "BebasNeue", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .formulario .btn-gris {
+    font-size: 1.5rem;
+  }
+}
 
 .formulario-back-white {
   background-color: #fff;
@@ -2544,6 +2666,42 @@ html, body {
 @media (min-width: 992px) {
   .formulario-back-white {
     border-radius: 10px;
+  }
+}
+
+.formulario-checkout .back-btn {
+  color: #ef4a23;
+  text-decoration: none;
+  font-family: "HeadingProTrial", "BebasNeue", sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.formulario-checkout .back-btn:before {
+  content: "<";
+  margin-right: 0.2rem;
+}
+.formulario-checkout .total-checkout {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: right;
+  border-top: 1px solid #ef4a23;
+  padding-top: 1rem;
+  margin-top: 1em;
+}
+.formulario-checkout .total-checkout p {
+  margin: 0.3em 0;
+}
+.formulario-checkout .form-row-billete {
+  margin-bottom: 0;
+  margin-top: 0.5em;
+}
+.formulario-checkout .form-row-billete-nota {
+  position: relative;
+  top: -1em;
+}
+@media (min-width: 992px) {
+  .formulario-checkout .form-row-billete-nota {
+    top: 0.5em;
   }
 }
 

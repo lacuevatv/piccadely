@@ -194,3 +194,8 @@ function zoomMapZona(zoom) {
         break;
     }
 }
+
+//inicializa las funciones de la pagina de checkkout
+function checkoutInit() {
+    console.log('checkoutYEAY');
+}
