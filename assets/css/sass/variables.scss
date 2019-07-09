@@ -71,6 +71,12 @@ $xlg: 1680px;
   clip-path: $clip;
 }
 
+
+
+/*
+ * HELPERS
+*/
+
 .btn {
   cursor: pointer;
   @include transition(all $transitionSpeed);
@@ -81,9 +87,8 @@ $xlg: 1680px;
     }
 }
 
-/*
- * HELPERS
-*/
 .fuente-principal {
   font-family: $fuente-principal!important;
 }
+
+

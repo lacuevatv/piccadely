@@ -72,13 +72,7 @@
 }
 
 
-
-.row-grid {
-    display: flex;
-    display: -o-flex;
-    display: -ms-flex;
-    display: -moz-flex;
-    display: -webkit-flex;
+.row-wrap{
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;

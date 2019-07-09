@@ -74,7 +74,13 @@
 
 .header-page {
     margin-bottom: 3em;
+    position: relative;
+    z-index: 11;
 }//.header-page
+
+.header-page-no-margin {
+    margin-bottom: 0;
+}
 
 .header-page-black {
     background-color: $color-negro;
@@ -102,8 +108,12 @@
     font-family: $fuente-secundaria;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 2rem;
+    @media (min-width: $sm) {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
     @media (min-width: $md) {
         font-size: 2.3rem;
         line-height: 2.3rem;
@@ -288,3 +298,111 @@
     }
 }//.formulario-back-white
 
+.sucursales-list {
+    margin-bottom: 2em;
+    li {
+        width: 45%;
+        @media (min-width: $sm) {
+            width: 48%;
+        }
+    }//li
+
+    .sucursal {
+        text-align: center;
+        font-family: $fuente-secundaria;
+        padding: 2em 0;
+        display: flex;
+        height: 100%;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+        @media (min-width: $md) {
+            text-align: left;
+        }
+
+        h1 {
+            font-weight: 700;
+            margin-bottom: .2em;
+        }
+
+        address {
+            font-family: $fuente-secundaria;
+            font-weight: 100;
+
+            strong {
+                font-weight: 700;
+            }
+        }
+
+        .horario {
+            font-family: $fuente-principal;
+            font-weight: 300;
+            margin: 1em 0;
+            p {
+                margin: .2em 0;
+            }
+        }
+
+        .ver-mapa-btn {
+            color: $color-naranja;
+            border: 1px solid $color-naranja; 
+            padding: .5em 1em .3em;
+            width: 100%;
+            margin: 0 auto;
+            max-width: 125px;
+            font-family: $fuente-principal;
+            font-weight: 100;
+            font-size: 1.3rem;
+            @include border-radius(.5rem);
+
+            &:after {
+                content: '>';
+                font-size: 120%;
+                vertical-align: bottom;
+                padding-left: .2em;
+            }
+            
+            @media (min-width: $md) {
+                display: none;
+            }
+        }
+
+        .wrapper-map-sucursal {
+            @include transition(all $transitionSpeed);
+            position: absolute;
+            z-index: 1;
+            height: 0;
+            width: 0;
+            top: -3em;
+            left: 0;
+            overflow: hidden;
+            @media (min-width: $md) {
+                position: relative;
+                top: 0;
+                height: 300px;
+                width: 100%;
+            }
+            @media (min-width: $xlg) {
+                height: 400px;
+            }
+        }
+
+        .wrapper-map-sucursal-open {
+            @include transition(all $transitionSpeed);
+            height: 110%;
+            width: 100%;
+        }
+    }//.sucursal
+
+}//.sucursales-list
