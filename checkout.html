@@ -194,9 +194,40 @@
             <div class="main-page">
                 <form method="POST" name="checkout-form" class="formulario formulario-checkout">
                     <div class="section-options-form">
-                        
-                        radios
-                        
+                           
+                        <ul class="opciones-checkout row row-aling-center row-justify-center">
+                            <li class="col-5 col-2-md row row-aling-center">
+                                <div class="radio-input col-4">
+                                    <input id="takeaway-radio" type="radio" name="modo" value="take-away">
+                                    <label>
+                                        <span class="sr-only">Take Away</span>
+                                    </label>
+                                </div>
+                                <div class="opcion-texto-descuento col-3 col-25-md">
+                                    30%<br>off
+                                </div>
+                                <div class="opcion-texto-nota col-3">
+                                    si retirás vos
+                                </div>
+                            </li>
+                            <li class="col-5 col-2-md row row-aling-center">
+                                <div class="radio-input col-4">
+                                    <input id="delivery-radio" type="radio" name="modo" value="delivery">
+                                    <label>
+                                        <span class="sr-only">Delivery</span>
+                                    </label>
+                                </div>
+                                <div class="opcion-texto-descuento col-3 col-25-md">
+                                    30%<br>off
+                                </div>
+                                <div class="opcion-texto-nota col-3">
+                                    Delivery Online
+                                </div>
+                                <div class="opcion-texto-nota col-2">
+                                    +$80 <br><em>envío</em>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
                     <div class="row-md row-aling-start row-justify-space-bw">
@@ -206,9 +237,75 @@
                                 Chequeá tu pedido
                             </h2>
 
-                            <ul class="lista-pedido"></ul>
+                            <ul id="pedido-elementos" class="pedido-desglose">
+                                <li class="row row-justify-space-bw">
+                                    <p class="pedido-unidad col-1">
+                                        1x
+                                    </p>
+                                    <p class="pedido-elemento col-7">
+                                        Promo Piccacumple<br>
+                                        13 aniversario - chica
+                                    </p>
+                                    <p class="mount col-2">$ <span>1071,00</span></p>
+                                </li>
+                            </ul>
 
-                            <ul class="agregados-pedido"></ul>
+                            <div id="pedido-descuentos" class="pedido-desglose row row-justify-space-bw">
+                                <span class="col-1">&nbsp;</span>
+                                <p class="pedido-elemento col-7">
+                                    descuento 30% off
+                                </p>
+                                <p class="mount col-2">$ <span>-321,30</span></p>
+                            </div>
+
+                            <div id="pedido-envios" class="pedido-desglose row row-justify-space-bw">
+                                <span class="col-1">&nbsp;</span>
+                                <p class="pedido-elemento col-7">
+                                    Envío
+                                </p>
+                                <p class="mount col-2">$ <span>0,00</span></p>
+                            </div>
+
+                            <ul class="pedido-desglose" id="pedido-agregados">
+                                <li class="row row-aling-center row-justify-space-bw">
+                                    <button class="col-2 btn add-adicional-btn">
+                                        <span class="sr-only">Agregar</span>
+                                    </button>
+                                    <p class="adicional-texto col-4">
+                                        Agregado de pan (400Gr)
+                                    </p>
+                                    <button class="col-2 btn remove-adicional-btn">
+                                        <span class="sr-only">Agregar</span>
+                                    </button>
+                                    <p class="mount col-2">$ <span>0,00</span></p>
+                                </li>
+
+                                <li class="row row-aling-center row-justify-space-bw">
+                                    <button class="col-2 btn add-adicional-btn">
+                                        <span class="sr-only">Agregar</span>
+                                    </button>
+                                    <p class="adicional-texto col-4">
+                                        Mix 4 creamas de autor
+                                    </p>
+                                    <button class="col-2 btn remove-adicional-btn">
+                                        <span class="sr-only">Agregar</span>
+                                    </button>
+                                    <p class="mount col-2">$ <span>0,00</span></p>
+                                </li>
+
+                                <li class="row row-aling-center row-justify-space-bw">
+                                    <button class="col-2 btn add-adicional-btn">
+                                        <span class="sr-only">Agregar</span>
+                                    </button>
+                                    <p class="adicional-texto col-4">
+                                        Papas fritas artesanales
+                                    </p>
+                                    <button class="col-2 btn remove-adicional-btn">
+                                        <span class="sr-only">Agregar</span>
+                                    </button>
+                                    <p class="mount col-2">$ <span>0,00</span></p>
+                                </li>
+                            </ul>
 
                             <a class="back-btn" href="index.html" title="Inicio">
                                 Continuar comprando
@@ -232,7 +329,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-row form-row-billete-nota">
+                            <div class="form-row form-row-billete-nota no-margin">
                                 <p class="nota-small nota-small-right no-margin col-7 col-8-md">
                                     <sup>*</sup>El BILLETE DIGITAL se envía por email luego de finalizada y concreatada cada compra. Es válido únicamente para compras futuras.
                                 </p>
@@ -356,8 +453,8 @@
                                 </div>
                             </div>
 
-                            <div class="form-row row-justify-end">
-                                <button class="btn btn-form-orange" type="submit">Confirmá</button>
+                            <div class="form-row row-justify-end no-margin">
+                                <button class="btn btn-form-orange no-margin" type="submit">Confirmá</button>
                             </div><!--form-row-->
                         </div><!--//.column-form-->
                     </div>

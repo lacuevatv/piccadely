@@ -197,5 +197,28 @@ function zoomMapZona(zoom) {
 
 //inicializa las funciones de la pagina de checkkout
 function checkoutInit() {
-    console.log('checkoutYEAY');
+    var takeAway = document.querySelector('#takeaway-radio'),
+        delivery = document.querySelector('#delivery-radio'),
+        sectionTakeAway = document.querySelector('#section-take-away'),
+        sectionDelivery = document.querySelector('#section-delivery');
+        
+        delivery.checked = true;
+
+        //oculta la seccion take away
+        sectionTakeAway.style.display = 'none';
+        
+    takeAway.addEventListener('click', function(){
+        if ( this.checked ) {
+            sectionTakeAway.style.display = 'block';
+            sectionDelivery.style.display = 'none';
+        }
+    });
+
+    delivery.addEventListener('click', function(){
+        if ( this.checked ) {
+            sectionTakeAway.style.display = 'none';
+            sectionDelivery.style.display = 'block';
+        }
+    });
+
 }

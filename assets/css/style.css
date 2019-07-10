@@ -201,14 +201,14 @@ button {
 /*
  * HELPERS
 */
-.btn, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom, .formulario-checkout .back-btn, .button-chat-wrapper .chat-felicidad-button, .main-footer .row .tel-footer .links-pedidos, .main-footer .row .tel-footer .tel-pedidos, .main-footer .row .tel-footer .wa-pedidos, .main-footer .row .nav-footer-wrapper .nav-footer li a, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a, .main-nav .pedi-wrapper .wa-pedidos, .main-nav .pedi-wrapper .tel-pedidos:before {
+.btn, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom, .formulario-checkout .adicional-btn, .formulario-checkout .remove-adicional-btn, .formulario-checkout .add-adicional-btn, .formulario-checkout .back-btn, .button-chat-wrapper .chat-felicidad-button, .main-footer .row .tel-footer .links-pedidos, .main-footer .row .tel-footer .tel-pedidos, .main-footer .row .tel-footer .wa-pedidos, .main-footer .row .nav-footer-wrapper .nav-footer li a, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a, .main-nav .pedi-wrapper .wa-pedidos, .main-nav .pedi-wrapper .tel-pedidos:before {
   cursor: pointer;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-.btn:hover, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom:hover, .formulario-checkout .back-btn:hover, .button-chat-wrapper .chat-felicidad-button:hover, .main-footer .row .tel-footer .links-pedidos:hover, .main-footer .row .tel-footer .tel-pedidos:hover, .main-footer .row .tel-footer .wa-pedidos:hover, .main-footer .row .nav-footer-wrapper .nav-footer li a:hover, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a:hover, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a:hover, .main-nav .pedi-wrapper .wa-pedidos:hover, .main-nav .pedi-wrapper .tel-pedidos:hover:before {
+.btn:hover, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom:hover, .formulario-checkout .adicional-btn:hover, .formulario-checkout .remove-adicional-btn:hover, .formulario-checkout .add-adicional-btn:hover, .formulario-checkout .back-btn:hover, .button-chat-wrapper .chat-felicidad-button:hover, .main-footer .row .tel-footer .links-pedidos:hover, .main-footer .row .tel-footer .tel-pedidos:hover, .main-footer .row .tel-footer .wa-pedidos:hover, .main-footer .row .nav-footer-wrapper .nav-footer li a:hover, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a:hover, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a:hover, .main-nav .pedi-wrapper .wa-pedidos:hover, .main-nav .pedi-wrapper .tel-pedidos:hover:before {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -2462,7 +2462,7 @@ html, body {
   text-align: right;
   margin-bottom: 1em;
   position: relative;
-  top: -1.5em;
+  top: -1em;
 }
 .nota-small-zonas-link > a {
   position: relative;
@@ -2517,7 +2517,7 @@ html, body {
 @media (min-width: 992px) {
   .formulario .column-form {
     background-color: #fff;
-    padding: 0 1em 1em;
+    padding: 0 1em 1.5em;
   }
 }
 .formulario .title-section {
@@ -2569,6 +2569,9 @@ html, body {
   .formulario .form-row .form-input:last-child {
     padding-right: 0;
   }
+  .formulario .form-row .form-input:first-child {
+    padding-left: 0;
+  }
 }
 .formulario .form-input {
   display: flex;
@@ -2600,6 +2603,9 @@ html, body {
   border-radius: 5px;
   padding: 0.5rem;
   background-color: transparent;
+  color: #8f8f8f;
+  font-family: "BebasNeue", sans-serif;
+  font-size: 0.7rem;
 }
 .formulario .form-input select {
   height: 30px;
@@ -2621,6 +2627,82 @@ html, body {
   font-family: "HeadingProTrial", "BebasNeue", sans-serif;
   font-size: 0.95rem;
   padding-right: 0.5rem;
+}
+.formulario .radio-input {
+  height: 38px;
+  width: 38px;
+  position: relative;
+}
+@media (min-width: 767px) {
+  .formulario .radio-input {
+    height: 48px;
+    width: 48px;
+  }
+}
+.formulario .radio-input input[type=radio] {
+  opacity: 0;
+  position: absolute;
+  z-index: 111;
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+}
+@media (min-width: 767px) {
+  .formulario .radio-input input[type=radio] {
+    height: 48px;
+    width: 48px;
+  }
+}
+.formulario .radio-input input[type=radio] + label {
+  position: absolute;
+  z-index: 11;
+  height: 38px;
+  width: 38px;
+  background-image: url(../images/radio.png);
+  background-size: 38px 38px;
+  display: block;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+  .formulario .radio-input input[type=radio] + label {
+    background-image: url(../images/radio@2x.png);
+    background-size: 38px 38px;
+  }
+}
+@media (min-width: 767px) {
+  .formulario .radio-input input[type=radio] + label {
+    height: 48px;
+    width: 48px;
+    background-image: url(../images/radio.png);
+    background-size: 48px 48px;
+  }
+}
+@media (min-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 767px) and (min--moz-device-pixel-ratio: 1.5), (min-width: 767px) and (min-resolution: 240dpi) {
+  .formulario .radio-input input[type=radio] + label {
+    background-image: url(../images/radio@2x.png);
+    background-size: 48px 48px;
+  }
+}
+.formulario .radio-input input[type=radio]:checked + label {
+  background-image: url(../images/radio-check.png);
+  background-size: 38px 38px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+  .formulario .radio-input input[type=radio]:checked + label {
+    background-image: url(../images/radio-check@2x.png);
+    background-size: 38px 38px;
+  }
+}
+@media (min-width: 767px) {
+  .formulario .radio-input input[type=radio]:checked + label {
+    background-image: url(../images/radio-check.png);
+    background-size: 48px 48px;
+  }
+}
+@media (min-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 767px) and (min--moz-device-pixel-ratio: 1.5), (min-width: 767px) and (min-resolution: 240dpi) {
+  .formulario .radio-input input[type=radio]:checked + label {
+    background-image: url(../images/radio-check@2x.png);
+    background-size: 48px 48px;
+  }
 }
 .formulario .btn-form-orange {
   width: 100%;
@@ -2659,6 +2741,30 @@ html, body {
     font-size: 1.5rem;
   }
 }
+.formulario ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #8f8f8f;
+  font-family: "BebasNeue", sans-serif;
+  font-size: 0.7rem;
+}
+.formulario ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8f8f8f;
+  font-family: "BebasNeue", sans-serif;
+  font-size: 0.7rem;
+}
+.formulario :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #8f8f8f;
+  font-family: "BebasNeue", sans-serif;
+  font-size: 0.7rem;
+}
+.formulario :-moz-placeholder {
+  /* Firefox 18- */
+  color: #8f8f8f;
+  font-family: "BebasNeue", sans-serif;
+  font-size: 0.7rem;
+}
 
 .formulario-back-white {
   background-color: #fff;
@@ -2669,6 +2775,40 @@ html, body {
   }
 }
 
+.formulario-checkout .opciones-checkout {
+  font-family: "BebasNeue", sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 700;
+  margin-bottom: 3em;
+}
+@media (min-width: 992px) {
+  .formulario-checkout .opciones-checkout {
+    font-size: 1.5rem;
+    line-height: 1.3rem;
+  }
+}
+.formulario-checkout .opciones-checkout .opcion-texto-descuento {
+  padding: 0.2rem 0.5rem;
+  border-right: 1px solid #231f20;
+  text-align: center;
+}
+.formulario-checkout .opciones-checkout .opcion-texto-nota {
+  padding: 0.2rem 0.2rem;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .formulario-checkout .opciones-checkout .opcion-texto-nota {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+}
+.formulario-checkout .opciones-checkout .opcion-texto-nota em {
+  font-weight: 400;
+  font-style: normal;
+}
 .formulario-checkout .back-btn {
   color: #ef4a23;
   text-decoration: none;
@@ -2703,6 +2843,35 @@ html, body {
   .formulario-checkout .form-row-billete-nota {
     top: 0.5em;
   }
+}
+.formulario-checkout .mount {
+  text-align: right;
+  font-weight: 700;
+  font-family: "BebasNeue", sans-serif;
+}
+.formulario-checkout .pedido-desglose {
+  margin: 1em 0;
+}
+.formulario-checkout .pedido-desglose li {
+  margin: 0.5em 0;
+}
+.formulario-checkout .pedido-desglose p {
+  margin: 0;
+}
+.formulario-checkout .adicional-btn, .formulario-checkout .remove-adicional-btn, .formulario-checkout .add-adicional-btn {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.formulario-checkout .add-adicional-btn {
+  background-image: url(../images/checked.svg);
+  background-size: 42px;
+}
+.formulario-checkout .remove-adicional-btn {
+  background-image: url(../images/nonchecked.svg);
+  background-size: 42px;
 }
 
 .sucursales-list {
