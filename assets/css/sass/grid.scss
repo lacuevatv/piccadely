@@ -229,3 +229,84 @@
         width: 100%;
     }
 }
+
+.col-1-lg {
+    @media (min-width: $lg) {
+        width: 10%;
+    }
+}
+.col-2-lg {
+    @media (min-width: $lg) {
+        width: 20%;
+    }
+}
+.col-25-lg {
+    @media (min-width: $lg) {
+        width: 25%;
+    }
+}
+.col-3-lg {
+    @media (min-width: $lg) {
+        width: 30%;
+    }
+}
+.col-33-lg {
+    @media (min-width: $lg) {
+        width: 33.33%;
+    }
+}
+.col-4-lg {
+    @media (min-width: $lg) {
+        width: 40%;
+    }
+}
+.col-43-lg {
+    @media (min-width: $lg) {
+        width: 43%;
+    }
+}
+.col-45-lg {
+    @media (min-width: $lg) {
+        width: 45%;
+    }
+}
+.col-5-lg {
+    @media (min-width: $lg) {
+        width: 50%;
+    }
+}
+.col-55-lg {
+    @media (min-width: $lg) {
+        width: 55%;
+    }
+}
+.col-6-lg {
+    @media (min-width: $lg) {
+        width: 60%;
+    }
+}
+.col-7-lg {
+    @media (min-width: $lg) {
+        width: 70%;
+    }
+}
+.col-75-lg {
+    @media (min-width: $lg) {
+        width: 75%;
+    }
+}
+.col-8-lg {
+    @media (min-width: $lg) {
+        width: 80%;
+    }
+}
+.col-9-lg {
+    @media (min-width: $lg) {
+        width: 90%;
+    }
+}
+.col-10-lg {
+    @media (min-width: $lg) {
+        width: 100%;
+    }
+}
