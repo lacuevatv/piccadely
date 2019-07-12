@@ -222,3 +222,49 @@ function checkoutInit() {
     });
 
 }
+
+function pediPicadasInit() {
+    console.log('re')
+    var contenedorPicadas = document.querySelector('#contenedor-picadas');
+    var botonesWrapper = document.querySelector('.wrapper-buttons-somos');
+    var botones = document.querySelectorAll('.btn-picadas-somos');
+    var picadas = contenedorPicadas.children;
+    
+    //siempre se muestran los botones
+    botonesWrapper.style.display = 'flex';
+
+    if (window.innerWidth < 992 ) {
+        //version mobil
+
+        //oculto las picadas
+        for (var i = 0; i < picadas.length; i++) {
+            picadas[i].style.display = 'none';
+        }
+        
+        //asigno evento al boton, lo unico que va a hacer es mostrar las picadas por defecto
+        for (var j = 0; j < botones.length; j++) {
+            botones[j].addEventListener('click', function() {
+                
+                //oculta los botones
+                botonesWrapper.style.display = 'none';
+
+                //muestra las picadas
+                for (var b = 0; b < picadas.length; b++) {
+                    picadas[b].style.display = 'block';
+                }
+            });
+        }
+
+    } else {
+        //version desktop
+        //le asigna un activo como el primero
+        botones[0].classList.add('activo');
+
+        //muestra las picadas
+        for (var b = 0; b < picadas.length; b++) {
+            picadas[b].style.display = 'block';
+        }
+    }
+
+    window.addEventListener('resize', pediPicadasInit);
+}

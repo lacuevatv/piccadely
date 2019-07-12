@@ -21,6 +21,23 @@
     }
 }
 
+.container-md {
+    position: relative;
+    width: 100%;
+    @media (min-width: $md) {
+        padding-left: $GlobalPaddingMD;
+        padding-right: $GlobalPaddingMD;
+    }
+    @media (min-width: $lg) {
+        padding-left: $GlobalPaddingLG;
+        padding-right: $GlobalPaddingLG;
+    }
+    @media (min-width: $xlg) {
+        padding-left: $GlobalPaddingXLG;
+        padding-right: $GlobalPaddingXLG;
+    }
+}
+
 .row {
     display: flex;
     display: -o-flex;
@@ -157,6 +174,11 @@
 .col-2-md {
     @media (min-width: $md) {
         width: 20%;
+    }
+}
+.col-23-md {
+    @media (min-width: $md) {
+        width: 23%;
     }
 }
 .col-25-md {
@@ -307,6 +329,87 @@
 }
 .col-10-lg {
     @media (min-width: $lg) {
+        width: 100%;
+    }
+}
+
+.col-1-xlg {
+    @media (min-width: $xlg) {
+        width: 10%;
+    }
+}
+.col-2-xlg {
+    @media (min-width: $xlg) {
+        width: 20%;
+    }
+}
+.col-25-xlg {
+    @media (min-width: $xlg) {
+        width: 25%;
+    }
+}
+.col-3-xlg {
+    @media (min-width: $xlg) {
+        width: 30%;
+    }
+}
+.col-33-xlg {
+    @media (min-width: $xlg) {
+        width: 33.33%;
+    }
+}
+.col-4-xlg {
+    @media (min-width: $xlg) {
+        width: 40%;
+    }
+}
+.col-43-xlg {
+    @media (min-width: $xlg) {
+        width: 43%;
+    }
+}
+.col-45-xlg {
+    @media (min-width: $xlg) {
+        width: 45%;
+    }
+}
+.col-5-xlg {
+    @media (min-width: $xlg) {
+        width: 50%;
+    }
+}
+.col-55-xlg {
+    @media (min-width: $xlg) {
+        width: 55%;
+    }
+}
+.col-6-xlg {
+    @media (min-width: $xlg) {
+        width: 60%;
+    }
+}
+.col-7-xlg {
+    @media (min-width: $xlg) {
+        width: 70%;
+    }
+}
+.col-75-xlg {
+    @media (min-width: $xlg) {
+        width: 75%;
+    }
+}
+.col-8-xlg {
+    @media (min-width: $xlg) {
+        width: 80%;
+    }
+}
+.col-9-xlg {
+    @media (min-width: $xlg) {
+        width: 90%;
+    }
+}
+.col-10-xlg {
+    @media (min-width: $xlg) {
         width: 100%;
     }
 }
