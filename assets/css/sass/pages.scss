@@ -87,6 +87,18 @@
     }
 }
 
+.cross-selling-page {
+    background-color: $color-blanco;
+    padding-bottom: 0;
+    @media (min-width: $md) {
+        background-color: transparent;
+    }
+
+    .header-page {
+        margin-bottom: 1em;
+    }
+}
+
 .header-page {
     margin-bottom: 3em;
     position: relative;
@@ -427,6 +439,7 @@
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 1em;
+        @extend .btn-ef-border-br-naranja;
         @media (min-width: $md) {
             font-size: 2rem;
         }
@@ -571,29 +584,28 @@
         }
     }
 
-    .adicional-btn {
-        @extend .btn;
-        width: 50px;
-        height: 50px;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .add-adicional-btn {
-        @extend .adicional-btn;
-        background-image: url(../images/checked.svg);
-        background-size: 42px;
-    }
-
-    .remove-adicional-btn {
-        @extend .adicional-btn;
-        background-image: url(../images/nonchecked.svg);
-        background-size: 42px;
-    }
-
-
 }//.formulario-checkout
+
+.adicional-btn {
+    @extend .btn;
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.add-adicional-btn {
+    @extend .adicional-btn;
+    background-image: url(../images/checked.svg);
+    background-size: 42px;
+}
+
+.remove-adicional-btn {
+    @extend .adicional-btn;
+    background-image: url(../images/nonchecked.svg);
+    background-size: 42px;
+}
 
 //SUCURSALES
 .sucursales-list {
@@ -1026,3 +1038,70 @@
     }//.contenido
 
 }//.ingredientes-wrapper
+
+//cross selling
+
+.items-cross-selling {
+    font-size: 1.3rem;
+    margin-bottom: .5em;
+    @media (min-width: $md) {
+        padding-right: 10rem;
+        font-size: 1.5rem;
+    }
+    @media (min-width: $xlg) {
+        padding-right: 12rem;
+        font-size: 1.7rem;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+    
+    .mount {
+        font-family: $fuente-principal;
+    }
+
+    .unidad {
+        font-family: $fuente-principal;
+    }
+}//.items-cross-selling
+
+.wrapper-btns-cross-selling {
+    background-color: $color-verde;
+    color: $color-blanco;
+    font-family: $fuente-principal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+    padding: .5em 1rem;
+    @media (min-width: $sm) {
+        width: 380px;
+        margin: 0 auto;
+        padding: .5em 1.5rem;
+        @include border-radius(10px);
+    }
+
+    .btn-picada {
+        text-decoration: none;
+        position: relative;
+        padding-left: .7em;
+        &:before {
+            content: '<';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .btn-pagar {
+        text-decoration: none;
+        position: relative;
+        padding-right: .7em;
+        &:after {
+            content: '>';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}//.wrapper-btns-cross-selling

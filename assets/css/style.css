@@ -201,14 +201,14 @@ button {
 /*
  * HELPERS
 */
-.btn, .ingredientes-wrapper .contenido .back-btn, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom, .formulario-checkout .adicional-btn, .formulario-checkout .remove-adicional-btn, .formulario-checkout .add-adicional-btn, .formulario-checkout .back-btn, .button-chat-wrapper .chat-felicidad-button, .main-footer .row .tel-footer .links-pedidos, .main-footer .row .tel-footer .tel-pedidos, .main-footer .row .tel-footer .wa-pedidos, .main-footer .row .nav-footer-wrapper .nav-footer li a, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a, .main-nav .pedi-wrapper .wa-pedidos, .main-nav .pedi-wrapper .tel-pedidos:before {
+.btn, .ingredientes-wrapper .contenido .back-btn, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom, .adicional-btn, .remove-adicional-btn, .add-adicional-btn, .formulario-checkout .back-btn, .button-chat-wrapper .chat-felicidad-button, .main-footer .row .tel-footer .links-pedidos, .main-footer .row .tel-footer .tel-pedidos, .main-footer .row .tel-footer .wa-pedidos, .main-footer .row .nav-footer-wrapper .nav-footer li a, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a, .main-nav .pedi-wrapper .wa-pedidos, .main-nav .pedi-wrapper .tel-pedidos:before {
   cursor: pointer;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-.btn:hover, .ingredientes-wrapper .contenido .back-btn:hover, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom:hover, .formulario-checkout .adicional-btn:hover, .formulario-checkout .remove-adicional-btn:hover, .formulario-checkout .add-adicional-btn:hover, .formulario-checkout .back-btn:hover, .button-chat-wrapper .chat-felicidad-button:hover, .main-footer .row .tel-footer .links-pedidos:hover, .main-footer .row .tel-footer .tel-pedidos:hover, .main-footer .row .tel-footer .wa-pedidos:hover, .main-footer .row .nav-footer-wrapper .nav-footer li a:hover, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a:hover, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a:hover, .main-nav .pedi-wrapper .wa-pedidos:hover, .main-nav .pedi-wrapper .tel-pedidos:hover:before {
+.btn:hover, .ingredientes-wrapper .contenido .back-btn:hover, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom:hover, .adicional-btn:hover, .remove-adicional-btn:hover, .add-adicional-btn:hover, .formulario-checkout .back-btn:hover, .button-chat-wrapper .chat-felicidad-button:hover, .main-footer .row .tel-footer .links-pedidos:hover, .main-footer .row .tel-footer .tel-pedidos:hover, .main-footer .row .tel-footer .wa-pedidos:hover, .main-footer .row .nav-footer-wrapper .nav-footer li a:hover, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a:hover, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a:hover, .main-nav .pedi-wrapper .wa-pedidos:hover, .main-nav .pedi-wrapper .tel-pedidos:hover:before {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -217,7 +217,7 @@ button {
   opacity: 0.7;
 }
 
-.btn-ef-border-br-naranja, .ingredientes-wrapper .contenido .btn-naranja {
+.btn-ef-border-br-naranja, .ingredientes-wrapper .contenido .btn-naranja, .formulario .btn-form-orange {
   border-bottom: 2px solid #be4827;
   border-right: 2px solid #be4827;
 }
@@ -2464,6 +2464,19 @@ html, body {
   }
 }
 
+.cross-selling-page {
+  background-color: #fff;
+  padding-bottom: 0;
+}
+@media (min-width: 992px) {
+  .cross-selling-page {
+    background-color: transparent;
+  }
+}
+.cross-selling-page .header-page {
+  margin-bottom: 1em;
+}
+
 .header-page {
   margin-bottom: 3em;
   position: relative;
@@ -2965,18 +2978,21 @@ html, body {
 .formulario-checkout .pedido-desglose p {
   margin: 0;
 }
-.formulario-checkout .adicional-btn, .formulario-checkout .remove-adicional-btn, .formulario-checkout .add-adicional-btn {
+
+.adicional-btn, .remove-adicional-btn, .add-adicional-btn {
   width: 50px;
   height: 50px;
   display: block;
   background-repeat: no-repeat;
   background-position: center;
 }
-.formulario-checkout .add-adicional-btn {
+
+.add-adicional-btn {
   background-image: url(../images/checked.svg);
   background-size: 42px;
 }
-.formulario-checkout .remove-adicional-btn {
+
+.remove-adicional-btn {
   background-image: url(../images/nonchecked.svg);
   background-size: 42px;
 }
@@ -3456,6 +3472,75 @@ html, body {
     font-size: 0.8rem;
     line-height: 0.9rem;
   }
+}
+
+.items-cross-selling {
+  font-size: 1.3rem;
+  margin-bottom: 0.5em;
+}
+@media (min-width: 992px) {
+  .items-cross-selling {
+    padding-right: 10rem;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1680px) {
+  .items-cross-selling {
+    padding-right: 12rem;
+    font-size: 1.7rem;
+  }
+}
+.items-cross-selling strong {
+  font-weight: 700;
+}
+.items-cross-selling .mount {
+  font-family: "BebasNeue", sans-serif;
+}
+.items-cross-selling .unidad {
+  font-family: "BebasNeue", sans-serif;
+}
+
+.wrapper-btns-cross-selling {
+  background-color: #26b250;
+  color: #fff;
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.3rem;
+  padding: 0.5em 1rem;
+}
+@media (min-width: 767px) {
+  .wrapper-btns-cross-selling {
+    width: 380px;
+    margin: 0 auto;
+    padding: 0.5em 1.5rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+  }
+}
+.wrapper-btns-cross-selling .btn-picada {
+  text-decoration: none;
+  position: relative;
+  padding-left: 0.7em;
+}
+.wrapper-btns-cross-selling .btn-picada:before {
+  content: "<";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.wrapper-btns-cross-selling .btn-pagar {
+  text-decoration: none;
+  position: relative;
+  padding-right: 0.7em;
+}
+.wrapper-btns-cross-selling .btn-pagar:after {
+  content: ">";
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
