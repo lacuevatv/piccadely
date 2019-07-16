@@ -16,6 +16,7 @@
         @media (min-width: $md) {
             padding: 1em 1em .5em;
             background-color: $color-beige;
+            overflow: auto;
         }
 
         .button-header {

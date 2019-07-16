@@ -223,8 +223,8 @@ function checkoutInit() {
 
 }
 
-function pediPicadasInit() {
-    console.log('re')
+function pediPicadasInit(event) {
+    
     var contenedorPicadas = document.querySelector('#contenedor-picadas');
     var botonesWrapper = document.querySelector('.wrapper-buttons-somos');
     var botones = document.querySelectorAll('.btn-picadas-somos');
@@ -266,5 +266,5 @@ function pediPicadasInit() {
         }
     }
 
-    window.addEventListener('resize', pediPicadasInit);
+    
 }

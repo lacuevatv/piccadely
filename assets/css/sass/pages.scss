@@ -579,13 +579,13 @@
 .add-adicional-btn {
     @extend .adicional-btn;
     background-image: url(../images/checked.svg);
-    background-size: 42px;
+    background-size: 42px 42px;
 }
 
 .remove-adicional-btn {
     @extend .adicional-btn;
     background-image: url(../images/nonchecked.svg);
-    background-size: 42px;
+    background-size: 42px 42px;
 }
 
 //SUCURSALES
