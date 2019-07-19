@@ -12,6 +12,7 @@
 
     strong {
         font-family: $fuente-principal;
+        font-weight: 700;
     }
     em {
         font-family: $fuente-principal;
@@ -312,7 +313,7 @@
             border-radius: 5px;
             padding: .5rem;
             background-color: transparent;
-            color: #8f8f8f;
+            color: $color-gris-texto;
             font-family: $fuente-principal;
             font-size: .7rem;
         }
@@ -444,22 +445,22 @@
     }
 
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color: #8f8f8f;
+        color: $color-gris-texto;
         font-family: $fuente-principal;
         font-size: .7rem;
     }
     ::-moz-placeholder { /* Firefox 19+ */
-        color: #8f8f8f;
+        color: $color-gris-texto;
         font-family: $fuente-principal;
         font-size: .7rem;
     }
     :-ms-input-placeholder { /* IE 10+ */
-        color: #8f8f8f;
+        color: $color-gris-texto;
         font-family: $fuente-principal;
         font-size: .7rem;
     }
     :-moz-placeholder { /* Firefox 18- */
-        color: #8f8f8f;
+        color: $color-gris-texto;
         font-family: $fuente-principal;
         font-size: .7rem;
     }
@@ -922,7 +923,7 @@
             }
             em {
                 font-size: 1rem;
-                color: #8f8f8f;
+                color: $color-gris-texto;
                 font-style: normal;
                 text-decoration: line-through;
                 @media (min-width: $md) {
@@ -1014,6 +1015,7 @@
         }
 
         .legales-btn {
+            color: $color-gris-texto;
             font-family: $fuente-secundaria;
             font-size: .6rem;
             line-height: .8rem;
@@ -1218,6 +1220,31 @@
             }
         }
     }
+
+    .btn-marketdely {
+        outline: none;
+        color: $color-gris-texto;
+        border: 1px solid $color-gris-texto;
+        margin: 0 .5em;
+        padding: .4em .7em .3em 1em;
+        font-size: 1.5rem;
+        @include border-radius(10px); 
+        
+        &::after {
+            content: '>';
+            vertical-align: text-bottom;
+            margin-left: .2rem;
+        }
+    }
+
+    .btn-marketdely.activo {
+        color: $color-naranja;
+        border-color: $color-naranja;
+
+        &::after {
+            color: $color-naranja;
+        }
+    } 
 }//.wrapper-buttons-somos
 
 .notas-mercado {
@@ -1354,7 +1381,7 @@
         }
         em {
             font-size: 1rem;
-            color: #8f8f8f;
+            color: $color-gris-texto;
             font-style: normal;
             text-decoration: line-through;
             @media (min-width: $md) {
@@ -1411,6 +1438,7 @@
         line-height: .8rem;
         font-weight: 100;
         text-align: center;
+        color: $color-gris-texto;
         @media (min-width: $md) {
             font-size: .8rem;
             line-height: .9rem;
@@ -1424,6 +1452,25 @@
     .producto-bottom {
         margin-top: 1rem;
     }
+
+    .minimo {
+        font-family: $fuente-secundaria;
+        font-size: .7rem;
+        color: $color-gris-texto;
+        font-weight: 400;
+    }
+
+    .gramos {
+        font-family: $fuente-principal;
+        color: $color-gris-texto;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }//gramos
+
+    .wrapper-add-minus-btns {
+        margin-bottom: .4em;
+    }//.wrapper-add-minus-btns
 }//.picada-producto
 
 

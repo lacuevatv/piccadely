@@ -2536,6 +2536,7 @@ html, body {
 }
 .page-wrapper strong {
   font-family: "BebasNeue", sans-serif;
+  font-weight: 700;
 }
 .page-wrapper em {
   font-family: "BebasNeue", sans-serif;
@@ -3590,6 +3591,7 @@ html, body {
   }
 }
 .ingredientes-wrapper .contenido .legales-btn {
+  color: #8f8f8f;
   font-family: "HeadingProTrial", "BebasNeue", sans-serif;
   font-size: 0.6rem;
   line-height: 0.8rem;
@@ -3790,6 +3792,30 @@ html, body {
   .wrapper-buttons-somos .btn-picadas-somos:nth-child(4) small {
     font-size: 65%;
   }
+}
+.wrapper-buttons-somos .btn-marketdely {
+  outline: none;
+  color: #8f8f8f;
+  border: 1px solid #8f8f8f;
+  margin: 0 0.5em;
+  padding: 0.4em 0.7em 0.3em 1em;
+  font-size: 1.5rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+.wrapper-buttons-somos .btn-marketdely::after {
+  content: ">";
+  vertical-align: text-bottom;
+  margin-left: 0.2rem;
+}
+.wrapper-buttons-somos .btn-marketdely.activo {
+  color: #ef4a23;
+  border-color: #ef4a23;
+}
+.wrapper-buttons-somos .btn-marketdely.activo::after {
+  color: #ef4a23;
 }
 
 .notas-mercado {
@@ -4003,6 +4029,7 @@ html, body {
   line-height: 0.8rem;
   font-weight: 100;
   text-align: center;
+  color: #8f8f8f;
 }
 @media (min-width: 992px) {
   .picada-producto .legales-btn {
@@ -4018,6 +4045,22 @@ html, body {
 }
 .picada-producto .producto-bottom {
   margin-top: 1rem;
+}
+.picada-producto .minimo {
+  font-family: "HeadingProTrial", "BebasNeue", sans-serif;
+  font-size: 0.7rem;
+  color: #8f8f8f;
+  font-weight: 400;
+}
+.picada-producto .gramos {
+  font-family: "BebasNeue", sans-serif;
+  color: #8f8f8f;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+.picada-producto .wrapper-add-minus-btns {
+  margin-bottom: 0.4em;
 }
 
 @media (min-width: 992px) {

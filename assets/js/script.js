@@ -268,3 +268,45 @@ function pediPicadasInit(event) {
 
     
 }
+
+function marketDelyInit() {
+    var contenedorPicadas = document.querySelector('#contenedor-picadas');
+    var elementos = contenedorPicadas.children;
+    var botones = document.querySelectorAll('.btn-marketdely');
+
+    //oculta picadas y coloca el primer boton como activo
+    var filtro = botones[0].getAttribute('data-filtro');
+    botones[0].classList.add('activo');
+            
+    for (var h = 0; h < elementos.length; h++) {
+        if ( !( elementos[h].classList.contains(filtro) ) ) {
+            elementos[h].style.display = 'none';
+        } else {
+            elementos[h].style.display = 'block';
+        } 
+    }
+
+    //crea eventos click en los botones
+    for (var i = 0; i < botones.length; i++) {
+        
+        botones[i].addEventListener('click', function(e){
+            //chequea el filtro que hizo click
+            var filtro = this.getAttribute('data-filtro');
+            
+            //oculta la liasta de acuerdo al filtro
+            for (var j = 0; j < elementos.length; j++) {
+                if ( !( elementos[j].classList.contains(filtro) ) ) {
+                    elementos[j].style.display = 'none';
+                } else {
+                    elementos[j].style.display = 'block';
+                } 
+            }
+
+            //marca y desmarca los botones para mostrar el que esta activo
+            for (var c = 0; c < botones.length; c++) {
+                botones[c].classList.toggle('activo');
+            }
+        });
+        
+    }
+}
