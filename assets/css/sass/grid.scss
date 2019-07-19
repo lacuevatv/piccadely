@@ -118,6 +118,22 @@
     @extend .row-justify-center;  
 }
 
+.align-self-end {
+    -webkit-align-self: flex-end;
+    -moz-align-self: flex-end;
+    -ms-align-self: flex-end;
+    -o-align-self: flex-end;
+    align-self: flex-end;
+}
+
+.justify-self-end {
+    -webkit-justify-self: flex-end;
+    -moz-justify-self: flex-end;
+    -ms-justify-self: flex-end;
+    -o-justify-self: flex-end;
+    justify-self: flex-end;
+}
+
 .col {
     flex-grow: 1;
 }

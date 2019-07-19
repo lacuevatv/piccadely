@@ -598,6 +598,22 @@ html, body {
   flex-wrap: wrap;
 }
 
+.align-self-end {
+  -webkit-align-self: flex-end;
+  -moz-align-self: flex-end;
+  -ms-align-self: flex-end;
+  -o-align-self: flex-end;
+  align-self: flex-end;
+}
+
+.justify-self-end {
+  -webkit-justify-self: flex-end;
+  -moz-justify-self: flex-end;
+  -ms-justify-self: flex-end;
+  -o-justify-self: flex-end;
+  justify-self: flex-end;
+}
+
 .col {
   flex-grow: 1;
 }
@@ -3776,6 +3792,17 @@ html, body {
   }
 }
 
+.notas-mercado {
+  font-family: "HeadingProTrial", "BebasNeue", sans-serif;
+  display: none;
+}
+@media (min-width: 992px) {
+  .notas-mercado {
+    display: block;
+    padding: 0 10px;
+  }
+}
+
 @media (min-width: 992px) {
   .lista-picadas {
     display: flex;
@@ -3800,6 +3827,7 @@ html, body {
 }
 @media (min-width: 992px) {
   .picada-producto {
+    height: 100%;
     -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
     -ms-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
@@ -3846,11 +3874,17 @@ html, body {
 @media (min-width: 992px) {
   .picada-producto .contenido {
     padding: 1em 1.5rem 0.5em;
+    height: calc(100% - 300px);
   }
 }
 @media (min-width: 1260px) {
   .picada-producto .contenido {
     padding: 1em 2rem 0.5em;
+  }
+}
+@media (min-width: 1680px) {
+  .picada-producto .contenido {
+    height: calc(100% - 350px);
   }
 }
 .picada-producto .ingredientes-btn {
@@ -3981,6 +4015,57 @@ html, body {
     font-size: 0.9rem;
     line-height: 1.1rem;
   }
+}
+.picada-producto .producto-bottom {
+  margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+  .picada-producto.regala-felicidad .imagen-destacada {
+    height: 200px;
+  }
+}
+@media (min-width: 1680px) {
+  .picada-producto.regala-felicidad .imagen-destacada {
+    height: 250px;
+  }
+}
+@media (min-width: 992px) {
+  .picada-producto.regala-felicidad .contenido {
+    height: calc(100% - 200px);
+  }
+}
+@media (min-width: 1680px) {
+  .picada-producto.regala-felicidad .contenido {
+    height: calc(100% - 250px);
+  }
+}
+@media (min-width: 992px) {
+  .picada-producto.regala-felicidad .titulo {
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+  }
+}
+@media (min-width: 992px) {
+  .picada-producto.regala-felicidad .precio {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .picada-producto.regala-felicidad .descuento {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .picada-producto.regala-felicidad .descuento em {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+}
+.picada-producto.regala-felicidad .btn-naranja {
+  margin-top: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

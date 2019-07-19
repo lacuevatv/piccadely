@@ -1220,6 +1220,15 @@
     }
 }//.wrapper-buttons-somos
 
+.notas-mercado {
+    font-family: $fuente-secundaria;
+    display: none;
+    @media (min-width: $md) {
+        display: block;
+        padding: 0 10px;
+    }
+}//.notas-mercado
+
 .lista-picadas {
     @media (min-width: $md) {
         display: flex;
@@ -1242,6 +1251,7 @@
 .picada-producto {
     background-color: $color-blanco;
     @media (min-width: $md) {
+        height: 100%;
         @include box-shadow(0px 0px 5px rgba(0,0,0,0.6));
     }
     
@@ -1277,9 +1287,13 @@
         }
         @media (min-width: $md) {
             padding: 1em 1.5rem .5em;
+            height: calc(100% - 300px);
         }
         @media (min-width: $lg) {
             padding: 1em 2rem .5em;
+        }
+        @media (min-width: $xlg) {
+            height: calc(100% - 350px);
         }
     }
 
@@ -1406,4 +1420,63 @@
             line-height: 1.1rem;
         }
     }
+
+    .producto-bottom {
+        margin-top: 1rem;
+    }
 }//.picada-producto
+
+
+//sirve para planifica encuentros tambien
+.picada-producto.regala-felicidad {
+    .imagen-destacada {
+        @media (min-width: $md) {
+            height: 200px;
+        }
+        @media (min-width: $xlg) {
+            height: 250px;
+        }
+    }
+
+    .contenido {
+        @media (min-width: $md) {
+            height: calc(100% - 200px);
+        }
+        @media (min-width: $xlg) {
+            height: calc(100% - 250px);
+        }
+    }
+
+    .titulo {
+        @media (min-width: $md) {
+            font-size: 1.5rem;
+            line-height: 1.4rem;
+        }
+    }
+
+    .precio {
+        @media (min-width: $md) {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .descuento {
+        @media (min-width: $md) {
+            font-size: 0.9rem;
+            line-height: 1rem;
+        }
+        em {
+            @media (min-width: $md) {
+                font-size: .9rem;
+                line-height: 1rem;
+            }
+        }
+        
+    }
+
+    .btn-naranja {
+        margin-top: .5rem;
+    }
+
+}//.picada-producto.regala-felicidad
