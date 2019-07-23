@@ -270,6 +270,9 @@ function pediPicadasInit(event) {
 }
 
 function marketDelyInit() {
+
+    btnResumenFixedonScroll();
+
     var contenedorPicadas = document.querySelector('#contenedor-picadas');
     var elementos = contenedorPicadas.children;
     var botones = document.querySelectorAll('.btn-marketdely');
@@ -309,4 +312,24 @@ function marketDelyInit() {
         });
         
     }
+}
+
+function btnResumenFixedonScroll() {
+    var resumen = document.querySelector('.wrapper-btns-resumen');
+    var lista = document.querySelector('#contenedor-picadas');
+    var footer = document.querySelector('.main-footer');
+    
+    resumen.style.position = 'fixed';
+
+    document.addEventListener('scroll', function (){
+        if ( isVisible(footer) ) {
+            resumen.style.position = 'absolute';
+        } else {
+            resumen.style.position = 'fixed';
+        }
+
+        
+    });
+    
+    
 }

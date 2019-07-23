@@ -1527,3 +1527,55 @@
     }
 
 }//.picada-producto.regala-felicidad
+
+.wrapper-btns-resumen {
+    background-color: $color-verde;
+    color: $color-blanco;
+    font-family: $fuente-principal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+    padding: .5em 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 414px;
+    left: 50%;
+    transform: (translateX(-50%));
+    z-index: 1111;
+    @media (min-width: $sm) {
+        bottom: 2em;
+        width: 380px;
+        margin: 0 auto;
+        padding: .5em 1.5rem;
+        @include border-radius(10px);
+    }
+    @media (min-width: $md) {
+        bottom: 2em;
+    }
+    
+
+    .btn-picada {
+        text-decoration: none;
+        position: relative;
+        padding-left: .7em;
+        &:before {
+            content: '<';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .btn-pagar {
+        text-decoration: none;
+        position: relative;
+        padding-right: .7em;
+        &:after {
+            content: '>';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}//.wrapper-btns-cross-selling
