@@ -201,14 +201,14 @@ button {
 /*
  * HELPERS
 */
-.btn, .picada-producto .ingredientes-btn, .ingredientes-wrapper .contenido .back-btn, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom, .adicional-btn, .remove-adicional-btn, .add-adicional-btn, .formulario-checkout .back-btn, .button-chat-wrapper .chat-felicidad-button, .main-footer .row .tel-footer .links-pedidos, .main-footer .row .tel-footer .tel-pedidos, .main-footer .row .tel-footer .wa-pedidos, .main-footer .row .nav-footer-wrapper .nav-footer li a, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a, .main-nav .pedi-wrapper .wa-pedidos, .main-nav .pedi-wrapper .tel-pedidos:before {
+.btn, .picada-producto .ingredientes-btn, .ingredientes-wrapper .contenido .back-btn, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom, .adicional-btn, .remove-adicional-btn, .add-adicional-btn, .formulario-checkout .back-btn, .button-chat-wrapper .chat-felicidad-button, .main-footer .row .tel-footer .links-pedidos, .main-footer .row .tel-footer .tel-pedidos, .main-footer .row .tel-footer .wa-pedidos, .main-footer .row .nav-footer-wrapper .nav-footer li a, .main-nav .navbar-desktop-wrapper .main-menu-desktop li .bottom-menu, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a, .main-nav .pedi-wrapper .wa-pedidos, .main-nav .pedi-wrapper .tel-pedidos:before {
   cursor: pointer;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-.btn:hover, .picada-producto .ingredientes-btn:hover, .ingredientes-wrapper .contenido .back-btn:hover, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom:hover, .adicional-btn:hover, .remove-adicional-btn:hover, .add-adicional-btn:hover, .formulario-checkout .back-btn:hover, .button-chat-wrapper .chat-felicidad-button:hover, .main-footer .row .tel-footer .links-pedidos:hover, .main-footer .row .tel-footer .tel-pedidos:hover, .main-footer .row .tel-footer .wa-pedidos:hover, .main-footer .row .nav-footer-wrapper .nav-footer li a:hover, .main-nav .navbar-desktop-wrapper .main-menu-desktop li a:hover, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a:hover, .main-nav .pedi-wrapper .wa-pedidos:hover, .main-nav .pedi-wrapper .tel-pedidos:hover:before {
+.btn:hover, .picada-producto .ingredientes-btn:hover, .ingredientes-wrapper .contenido .back-btn:hover, .zona-entrega-wrapper .buttons-zoom-map .btn-zoom:hover, .adicional-btn:hover, .remove-adicional-btn:hover, .add-adicional-btn:hover, .formulario-checkout .back-btn:hover, .button-chat-wrapper .chat-felicidad-button:hover, .main-footer .row .tel-footer .links-pedidos:hover, .main-footer .row .tel-footer .tel-pedidos:hover, .main-footer .row .tel-footer .wa-pedidos:hover, .main-footer .row .nav-footer-wrapper .nav-footer li a:hover, .main-nav .navbar-desktop-wrapper .main-menu-desktop li .bottom-menu:hover, .main-nav .navbar-desktop-wrapper .sup-menu-desktop li a:hover, .main-nav .pedi-wrapper .wa-pedidos:hover, .main-nav .pedi-wrapper .tel-pedidos:hover:before {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -1243,32 +1243,71 @@ html, body {
   display: -moz-flex;
   display: -webkit-flex;
   margin: 1.5em 0 1em;
+}
+@media (min-width: 1260px) {
+  .main-nav .navbar-desktop-wrapper .main-menu-desktop {
+    margin: 1.5em 0 0.5em;
+  }
+}
+@media (min-width: 1680px) {
+  .main-nav .navbar-desktop-wrapper .main-menu-desktop {
+    margin: 1em 0 0.5em;
+  }
+}
+.main-nav .navbar-desktop-wrapper .main-menu-desktop li {
+  display: flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+}
+.main-nav .navbar-desktop-wrapper .main-menu-desktop li .sup-menu {
+  margin-bottom: 1em;
+}
+@media (min-width: 1680px) {
+  .main-nav .navbar-desktop-wrapper .main-menu-desktop li .sup-menu {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+}
+.main-nav .navbar-desktop-wrapper .main-menu-desktop li .bottom-menu {
+  margin-right: 2em;
+  position: relative;
   font-family: "HeadingProTrial", "BebasNeue", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 @media (min-width: 1260px) {
-  .main-nav .navbar-desktop-wrapper .main-menu-desktop {
+  .main-nav .navbar-desktop-wrapper .main-menu-desktop li .bottom-menu {
     font-size: 1.25rem;
-    margin: 1.5em 0 0.5em;
   }
 }
 @media (min-width: 1680px) {
-  .main-nav .navbar-desktop-wrapper .main-menu-desktop {
+  .main-nav .navbar-desktop-wrapper .main-menu-desktop li .bottom-menu {
     font-size: 1.7rem;
     line-height: 1.7rem;
-    margin: 1em 0 0.5em;
   }
 }
-.main-nav .navbar-desktop-wrapper .main-menu-desktop li a {
-  margin-right: 2em;
-  position: relative;
-}
-.main-nav .navbar-desktop-wrapper .main-menu-desktop li a strong {
+.main-nav .navbar-desktop-wrapper .main-menu-desktop li .bottom-menu strong {
   text-transform: uppercase;
 }
-.main-nav .navbar-desktop-wrapper .main-menu-desktop li a:after {
+.main-nav .navbar-desktop-wrapper .main-menu-desktop li .bottom-menu:after {
   content: ">";
   position: absolute;
   display: block;
@@ -1283,7 +1322,7 @@ html, body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.main-nav .navbar-desktop-wrapper .main-menu-desktop li a:hover:after {
+.main-nav .navbar-desktop-wrapper .main-menu-desktop li .bottom-menu:hover:after {
   -webkit-transform: translateY(-50%) translateX(0.2em);
   -moz-transform: translateY(-50%) translateX(0.2em);
   -ms-transform: translateY(-50%) translateX(0.2em);
@@ -4171,6 +4210,22 @@ html, body {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+@media (min-width: 992px) {
+  .page-promos {
+    background-color: #fff;
+  }
+}
+
+.lista-promos li {
+  margin: 1em 0;
+}
+.lista-promos .imagen-promo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 950px;
 }
 
 /*# sourceMappingURL=style.css.map */

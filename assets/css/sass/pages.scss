@@ -1579,3 +1579,21 @@
         }
     }
 }//.wrapper-btns-cross-selling
+.page-promos {
+    @media (min-width: $md) {
+        background-color: $color-blanco;
+    }
+}
+.lista-promos {
+
+    li {
+        margin: 1em 0;
+    }
+
+    .imagen-promo {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 950px;
+    }
+}//.lista-promos

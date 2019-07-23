@@ -239,26 +239,59 @@
             display: -moz-flex;
             display: -webkit-flex;
             margin: 1.5em 0 1em;
-            font-family: $fuente-secundaria;
-            font-weight: 700;
-            font-size: 1rem;
-            line-height: 1.5rem;
             @media (min-width: $lg) {
-                font-size: 1.25rem;
                 margin: 1.5em 0 .5em;
             }
             @media (min-width: $xlg) {
-                font-size: 1.7rem;
-                line-height: 1.7rem;
                 margin: 1em 0 .5em;
             }
 
             li {
+                display: flex;
+                display: -o-flex;
+                display: -ms-flex;
+                display: -moz-flex;
+                display: -webkit-flex;
+                -webkit-flex-direction: column;
+                -moz-flex-direction: column;
+                -ms-flex-direction: column;
+                -o-flex-direction: column;
+                flex-direction: column;
+                -webkit-justify-content: flex-end;
+                -moz-justify-content: flex-end;
+                -ms-justify-content: flex-end;
+                -o-justify-content: flex-end;
+                justify-content: flex-end;
+                -webkit-align-items: flex-start;
+                -moz-align-items: flex-start;
+                -ms-align-items: flex-start;
+                -o-align-items: flex-start;
+                align-items: flex-start;
 
-                a {
+                .sup-menu {
+                    margin-bottom: 1em;
+                    @media (min-width: $xlg) {
+                        font-size: 1.4rem;
+                        line-height: 1.5rem;
+                    }
+                }
+
+                .bottom-menu {
                     @extend .btn;
                     margin-right: 2em;
                     position: relative;
+                    font-family: $fuente-secundaria;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    @media (min-width: $lg) {
+                        font-size: 1.25rem;
+                    }
+                    @media (min-width: $xlg) {
+                        font-size: 1.7rem;
+                        line-height: 1.7rem;
+                    }
+                    
                     
                     strong {
                         text-transform: uppercase;
