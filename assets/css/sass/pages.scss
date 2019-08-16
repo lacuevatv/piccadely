@@ -639,6 +639,7 @@
 
         .horario {
             font-family: $fuente-principal;
+            font-family: $fuente-principal-book;
             font-weight: 300;
             margin: 1em 0;
             p {
@@ -1172,6 +1173,7 @@
         small {
             font-size: 70%;
             font-weight: 100;
+            font-family: $fuente-principal-book;
         }
     }//.btn-picadas-somos
 
@@ -1328,7 +1330,8 @@
         @extend .btn;
         color: $color-naranja-texto;
         text-decoration: none;
-        font-family: $fuente-principal;
+        //font-family: $fuente-principal;
+        font-family: $fuente-principal-book;
         font-size: 1.5rem;
         font-weight: 300;
         position: relative;

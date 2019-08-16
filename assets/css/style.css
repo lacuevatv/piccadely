@@ -3213,6 +3213,7 @@ html, body {
 }
 .sucursales-list .sucursal .horario {
   font-family: "BebasNeue", sans-serif;
+  font-family: "BebasNeue-Book", "BebasNeue", sans-serif;
   font-weight: 300;
   margin: 1em 0;
 }
@@ -3798,6 +3799,7 @@ html, body {
 .wrapper-buttons-somos .btn-picadas-somos small {
   font-size: 70%;
   font-weight: 100;
+  font-family: "BebasNeue-Book", "BebasNeue", sans-serif;
 }
 .wrapper-buttons-somos .btn-picadas-somos.activo {
   color: #ef4a23;
@@ -3961,7 +3963,7 @@ html, body {
 .picada-producto .ingredientes-btn {
   color: #f5831f;
   text-decoration: none;
-  font-family: "BebasNeue", sans-serif;
+  font-family: "BebasNeue-Book", "BebasNeue", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
   position: relative;
