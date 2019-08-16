@@ -515,7 +515,7 @@
         text-decoration: none;
         font-family: $fuente-secundaria;
         font-size: 1rem;
-        font-weight: 100;
+        font-weight: 300;
 
         &:before {
             content: '<';
@@ -638,9 +638,10 @@
         }
 
         .horario {
-            font-family: $fuente-principal;
+            //font-family: $fuente-principal;
+            //font-weight: 300;
             font-family: $fuente-principal-book;
-            font-weight: 300;
+            font-weight: 700;
             margin: 1em 0;
             p {
                 margin: .2em 0;
@@ -855,9 +856,11 @@
             @extend .btn;
             color: $color-naranja-texto;
             text-decoration: none;
-            font-family: $fuente-principal;
+            //font-family: $fuente-principal;
+            //font-weight: 300;
+            font-family: $fuente-principal-book;
+            font-weight: 700;
             font-size: 1.5rem;
-            font-weight: 300;
             position: relative;
     
             &:before {
@@ -913,7 +916,9 @@
             font-size: .9rem;
             line-height: 1rem;
             color: $color-naranja-texto;
-            font-weight: 300;
+            //font-weight: 300;
+            font-weight: 700;
+            font-family: $fuente-principal-book;
             @media (min-width: $md) {
                 font-size: 1.2rem;
                 line-height: 1.5rem;
@@ -954,7 +959,9 @@
             }
             strong {
                 color: $color-naranja-texto;
-                font-weight: 300;
+                //font-weight: 300;
+                font-weight: 700;
+                font-family: $fuente-principal-book;
             }
         }
 
@@ -1172,7 +1179,7 @@
 
         small {
             font-size: 70%;
-            font-weight: 100;
+            font-weight: 700;
             font-family: $fuente-principal-book;
         }
     }//.btn-picadas-somos
@@ -1333,7 +1340,7 @@
         //font-family: $fuente-principal;
         font-family: $fuente-principal-book;
         font-size: 1.5rem;
-        font-weight: 300;
+        font-weight: 700;
         position: relative;
 
         &:after {
@@ -1377,7 +1384,9 @@
         font-size: .9rem;
         line-height: 1rem;
         color: $color-naranja-texto;
-        font-weight: 300;
+        //font-weight: 300;
+        font-weight: 700;
+        font-family: $fuente-principal-book;
         @media (min-width: $md) {
             font-size: 1.2rem;
             line-height: 1.5rem;
@@ -1406,7 +1415,9 @@
         }
         strong {
             color: $color-naranja-texto;
-            font-weight: 300;
+            //font-weight: 300;
+            font-family: $fuente-principal-book;
+            font-weight: 700;
         }
     }
 

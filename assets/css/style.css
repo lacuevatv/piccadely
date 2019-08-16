@@ -3100,7 +3100,7 @@ html, body {
   text-decoration: none;
   font-family: "HeadingProTrial", "BebasNeue", sans-serif;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 .formulario-checkout .back-btn:before {
   content: "<";
@@ -3212,9 +3212,8 @@ html, body {
   font-weight: 700;
 }
 .sucursales-list .sucursal .horario {
-  font-family: "BebasNeue", sans-serif;
   font-family: "BebasNeue-Book", "BebasNeue", sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   margin: 1em 0;
 }
 .sucursales-list .sucursal .horario p {
@@ -3455,9 +3454,9 @@ html, body {
 .ingredientes-wrapper .contenido .back-btn {
   color: #f5831f;
   text-decoration: none;
-  font-family: "BebasNeue", sans-serif;
+  font-family: "BebasNeue-Book", "BebasNeue", sans-serif;
+  font-weight: 700;
   font-size: 1.5rem;
-  font-weight: 300;
   position: relative;
 }
 .ingredientes-wrapper .contenido .back-btn:before {
@@ -3518,7 +3517,8 @@ html, body {
   font-size: 0.9rem;
   line-height: 1rem;
   color: #f5831f;
-  font-weight: 300;
+  font-weight: 700;
+  font-family: "BebasNeue-Book", "BebasNeue", sans-serif;
 }
 @media (min-width: 992px) {
   .ingredientes-wrapper .contenido .descuento-ingredientes {
@@ -3570,7 +3570,8 @@ html, body {
 }
 .ingredientes-wrapper .contenido .piccan-ingredientes strong {
   color: #f5831f;
-  font-weight: 300;
+  font-weight: 700;
+  font-family: "BebasNeue-Book", "BebasNeue", sans-serif;
 }
 .ingredientes-wrapper .contenido .ingredientes {
   margin-top: 1.5em;
@@ -3798,7 +3799,7 @@ html, body {
 }
 .wrapper-buttons-somos .btn-picadas-somos small {
   font-size: 70%;
-  font-weight: 100;
+  font-weight: 700;
   font-family: "BebasNeue-Book", "BebasNeue", sans-serif;
 }
 .wrapper-buttons-somos .btn-picadas-somos.activo {
@@ -3965,7 +3966,7 @@ html, body {
   text-decoration: none;
   font-family: "BebasNeue-Book", "BebasNeue", sans-serif;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 700;
   position: relative;
 }
 .picada-producto .ingredientes-btn:after {
@@ -4009,7 +4010,8 @@ html, body {
   font-size: 0.9rem;
   line-height: 1rem;
   color: #f5831f;
-  font-weight: 300;
+  font-weight: 700;
+  font-family: "BebasNeue-Book", "BebasNeue", sans-serif;
 }
 @media (min-width: 992px) {
   .picada-producto .descuento {
@@ -4043,7 +4045,8 @@ html, body {
 }
 .picada-producto .piccan strong {
   color: #f5831f;
-  font-weight: 300;
+  font-family: "BebasNeue-Book", "BebasNeue", sans-serif;
+  font-weight: 700;
 }
 .picada-producto .btn-naranja {
   text-align: center;
